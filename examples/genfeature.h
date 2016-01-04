@@ -45,6 +45,7 @@ public:
     const string srl_model_file = "ltp_data/srl";
 
     std::vector<std::unordered_set<string>> vec;
+    std::unordered_set<string> nation;
 
     void *cws_model;
     void *ner_model;
@@ -331,7 +332,7 @@ public:
         CHECK_RTN_LOGE(rtn, "error in getting children");
         cerr<<" children size:"<<children.size()<<" parseTree"<< parseTree.size()<<endl;
         string fullTree;
-        rtn = getTree(post_tags, parseTree,words,children,subRoot,fullTree);
+        rtn = getTree(post_tags, parseTree,words,children,subRoot,fullTree,dePerson,deInstitute);
         CHECK_RTN_LOGE(rtn, "error in getting tree");
         string simpleTree;
         rtn = getSimpleTreeWrapper(post_tags, parseTree,words,children,subRoot,simpleTree,dePerson,deInstitute);
@@ -351,14 +352,17 @@ public:
 private:
     int getTree(const vector<string> & post_tags, const vector<pair<int, string>> &parseTree, const vector<string> & words,
                 const vector<vector<int>> &children,
-                const int root, string & feature) const {
+                const int root, string & feature,const int p , const int in) const {
         feature.clear();
         string subTree;
         //cerr<<"getting root:"<<root<<" :size:"<<children[root].size()<<" @ " <<endl;
         int rtn = 0;
         if(children[root].size()==0) {
             if(semantic_tree){
-                feature = "("+parseTree[root].second+" "+words[root]+")";
+                string content = words[root];
+                if(root==p) content="人名";
+                if(root==in) content="机构名";
+                feature = "("+parseTree[root].second+" "+content+")";
             } else {
                 feature = "("+parseTree[root].second+" "+post_tags[root]+")";
             }
@@ -367,7 +371,7 @@ private:
         }
         feature="(" +parseTree[root].second;
         for(int i=0;i<children[root].size();i++) {
-            rtn = getTree(post_tags, parseTree,words, children, children[root][i], subTree);
+            rtn = getTree(post_tags, parseTree,words, children, children[root][i], subTree,p,in);
             feature.push_back(' ');
             feature.append(subTree);
         }
@@ -382,10 +386,12 @@ private:
                              const int root, string & feature, const int p, const int i) const{
         int rtn =0;
         if(root==p){
-            rtn = getSimplePath(post_tags, parseTree, words,children,root,i,feature);
+            string ct="机构名";
+            rtn = getSimplePath(post_tags, parseTree, words,children,root,i,feature,ct);
             CHECK_RTN_LOGE(rtn,"root=p,getSimplePath error");
         }else if(root==i){
-            rtn = getSimplePath(post_tags, parseTree,words,children,root,p,feature);
+            string ct="人名";
+            rtn = getSimplePath(post_tags, parseTree,words,children,root,p,feature, ct);
             CHECK_RTN_LOGE(rtn,"root=i,getSimplePath error");
         }else{
             rtn =getSimpleTree(post_tags, parseTree,words,children,root,feature,p,i);
@@ -397,14 +403,15 @@ private:
     int getSimplePath(const vector<string> & post_tags, const vector<pair<int, string>> &parseTree,
                       const vector<string> & words,
                       const vector<vector<int>> &children,
-                      const int root,  int dest, string & feature) const {
+                      const int root,  int dest, string & feature, const string &ct) const {
         feature.clear();
         string subTree;
        // cerr<<"getting root:"<<root<<" :size:"<<children[root].size()<<" @ " <<endl;
         int rtn = 0;
 
         if(semantic_tree){
-            feature = "(" + parseTree[dest].second + " " + words[dest] + ")";
+            feature = "("+parseTree[dest].second+" "+ct+")";
+            //feature = "(" + parseTree[dest].second + " " + words[dest] + ")";
         }else{
             feature = "(" + parseTree[dest].second + " " + post_tags[dest] + ")";
         }
@@ -439,7 +446,11 @@ private:
             if(!semantic_tree) {
                 feature = "(" + parseTree[root].second + " " + post_tags[root] + ")";
             }else{
-                feature = "(" + parseTree[root].second + " " + words[root] + ")";
+                string content = words[root];
+                if(root==p) content="人名";
+                if(root==i) content="机构名";
+                feature = "("+parseTree[root].second+" "+content+")";
+                //feature = "(" + parseTree[root].second + " " + words[root] + ")";
             }
             return 0;
         }
@@ -534,7 +545,7 @@ public:
             }
             else if(nes[i].find("Nh")!=std::string::npos){
                 tP.append(words[i]);
-            }else if(nes[i].find("Ni")!=std::string::npos){
+            }else if(nes[i].find("Ni")!=std::string::npos || (nes[i].find("Ns")!=std::string::npos && nation.count(words[i])>0) ){
                 tI.append(words[i]);
             }
             //cerr<<nes[i];
@@ -698,7 +709,7 @@ public:
     }
 
     int LoadKeyWords(){
-        int fileListNum=2;
+        int fileListNum=4;
         vec.resize(fileListNum);
         for(int i=0;i<fileListNum;i++){
             ifstream fin("data/"+to_string(i)+".txt");
@@ -711,6 +722,17 @@ public:
             }
             fin.close();
         }
+        ifstream fin("data/nation.txt");
+        string tmp;
+        if(!fin.good()){
+            return -1;
+        }
+        while(fin>>tmp){
+            nation.insert(tmp);
+        }
+        fin.close();
+
+
         return 0;
     }
 

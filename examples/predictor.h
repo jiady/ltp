@@ -18,12 +18,24 @@ class Predictor{
     const string tmpFile="svm/tmp_data/feature.txt";
     const string rawFile="svm/tmp_data/raw_data.txt";
 
+    std::unordered_set<string> nation;
+
     ofstream tmpOfStream;
 
     XMLDocument xmlDocument;
     Model model;
 public:
     int main(){
+        ifstream fin("data/nation.txt");
+        string tmp;
+        if(!fin.good()){
+            return -1;
+        }
+        while(fin>>tmp){
+            nation.insert(tmp);
+        }
+        fin.close();
+
         loadFile();
         GetAllFeature();
     }
@@ -84,10 +96,10 @@ public:
         vector<int> ins ,people;
         set<int> PosP,PosI;
         for(int i=0;i<nes.size();i++){
-            if(nes[i]=="S-Ni" || nes[i]=="E-Ni"){
+            if(nes[i]=="S-Ni" || nes[i]=="E-Ni" || (nes[i]=="S-Ns" && nation.count(words[i])>0) ){
                 ins.push_back(i);
                 PosI.insert(i);
-            }else if(nes[i]=="S-Nh" || nes[i] == "E-Nh"){
+            }else if(nes[i]=="S-Nh" || nes[i] == "E-Nh" ){
                 people.push_back(i);
                 PosP.insert(i);
             }
