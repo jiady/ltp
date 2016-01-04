@@ -105,6 +105,14 @@ public:
         parseTree.clear();
         int len = segmentor_segment(cws_model, sentence, words);
 
+        for(int i=0;i<words.size();i++){
+            if(words[i]=="(" || words[i]=="（" ){
+                words[i]="[";
+            }else if(words[i]==")" || words[i]=="）" ) {
+                words[i] = "]";
+            }
+        }
+
         postagger_postag(pos_model, words, post_tags);
 
         ner_recognize(ner_model, words, post_tags, nes);

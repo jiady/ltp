@@ -70,6 +70,10 @@ public:
 
         XMLElement *weibos=xmlDocument.RootElement();
         XMLElement *weibo=weibos->FirstChildElement("weibo");
+        vector<string> sens;
+        vector<string> ids;
+        ids.reserve(5000);
+        sens.reserve(5000);
         while(weibo){
             string id;
             string text;
@@ -78,11 +82,23 @@ public:
             id=attributeOfWeibo->Value();
             text= weibo->GetText();
             cout<<id<<" "<<text<<endl;
+            sens.push_back(text);
+            ids.push_back(id);
+            /*
             int rtn =0;
             rtn = GetSentenceFeature(text,id, tmpOfStream, rawOfStream);
             CHECK_RTN_LOGE_CTN(rtn,"GetSenteceFeature error");
+             */
             weibo=weibo->NextSiblingElement();
         }
+#pragma omp parallel for
+        for(int i=0;i<sens.size();i++){
+            int rtn =0;
+            rtn = GetSentenceFeature(sens[i],ids[i], tmpOfStream,rawOfStream);
+            CHECK_RTN_LOGE_CTN(rtn,"GetSenteceFeature error");
+        }
+
+
         return 0;
     }
 
@@ -113,7 +129,10 @@ public:
                 int rtn =0;
                 rtn = model.getFeatureByLoc(sentence, people[j],ins[i],words,post_tags,nes,parseTree,PosP,PosI,feature);
                 CHECK_RTN_LOGE_CTN(rtn,"feature get by loc error at"+ ins[i]+people[j]);
-                tmpOfStream<< id <<" "<<feature<<endl;
+#pragma omp critical
+                {
+                    tmpOfStream << id << " " << feature << endl;
+                }
 
                 string allp, alli;
                 int k;
@@ -138,7 +157,10 @@ public:
                 for(k++;k<=people[j];k++){
                     allp.append(words[k]);
                 }
-                rawOfStream<< id <<"*"<<alli<<"*"<<allp<<endl;
+#pragma omp critical
+                {
+                    rawOfStream << id << "*" << alli << "*" << allp << endl;
+                }
             }
         }
         return 0;

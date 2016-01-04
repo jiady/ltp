@@ -404,6 +404,8 @@ void read_documents(char *docfile, DOC *docs, double *label,
       if(!parse_document(line, &doc, &doc_label, totwords, max_words_doc, kernel_parm)) {
          printf("\nParsing error in line %ld!\n%s",dnum,line);
          exit(1);
+      }else{
+          printf("succ parse @%ld\n",dnum);
       }
 
     label[dnum]=doc_label;

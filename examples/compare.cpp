@@ -66,15 +66,19 @@ int main(){
         id=attributeOfWeibo->Value();
         text= weibo->GetText();
         //cout<<id<<" "<<text<<endl;
+        cerr<<id<<"#"<<text<<endl;
         for(auto a:mp[id]) {
             XMLElement *ele = xmlDocument.NewElement("employee");
             ele->SetAttribute("from",a.second.c_str());
+            cerr<<"from: "<< a.second;
             ele->SetAttribute("name",a.first.c_str());
             weibo->InsertEndChild(ele);
+            cerr<<"hire as: "<<a.first<<endl;
         }
         weibo=weibo->NextSiblingElement();
     }
     xmlDocument.SaveFile(xml_output.c_str());
+
 
     return 0;
 }
