@@ -34,3 +34,4 @@ add_subdirectory (src)
 
 # testing section
 # -- generate configure file for ltp_test
+add_subdirectory (examples)

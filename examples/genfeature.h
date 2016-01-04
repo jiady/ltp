@@ -30,6 +30,8 @@
 #include "ltp/postag_dll.h"
 #include "ltp/segment_dll.h"
 #include "ltp/SRL_DLL.h"
+#include "tinyxml2.h"
+
 
 using namespace std;
 
@@ -51,11 +53,14 @@ public:
 
     const string input = "data/input.txt";
     const string featureOutput = "svm/data/feature.txt";
+    //const string input = "svm/raw_data/sina_sen_neg.txt";
+    //const string featureOutput = "svm/raw_data/new_sina_sen_neg.txt";
     const string rawData = "svm/data/raw_data.txt";
     const string saveData ="data/save.txt";
 
 
     const bool semantic_tree=true;
+    const bool loadFromFile=true;
 
     int LoadData(vector<string> &sentences, vector<string> &people,
                  vector<string> &institute, vector<int> &label) const {
@@ -74,7 +79,11 @@ public:
             getline(ss, i, '*');
             ss >> l;
             if(p.size()==0 || i.size()==0 || s.size()==0){
-                return -1;
+                cerr<<input<<endl;
+                cerr<<tmp<<endl;
+                cerr<<s<<"#"<<p<<"#"<<i<<"#"<<l<<endl;
+                //return -1;
+                continue;
             }
             sentences.push_back(s);
             people.push_back(p);
@@ -135,13 +144,19 @@ public:
             string & sentence= sentences[i];
             vector<string> words, post_tags,nes;
             vector<pair<int,string>> parseTree;
-            //rtn = parse(sentence,words,post_tags,nes,parseTree);
+            if(!loadFromFile) {
+                rtn = parse(sentence, words, post_tags, nes, parseTree);
+            }
             cerr<<i<<" parse succ"<<endl;
             CHECK_RTN_LOGE_CTN(rtn,"parse error");
             string feature;
+
             //save(sentence,people[i],institute[i],labels[i],words,post_tags,nes,parseTree,"data/input/"+to_string(i)+".txt");
-            rtn = load(sentence,people[i],institute[i],labels[i],words,post_tags,nes,parseTree,"data/input/"+to_string(i)+".txt");
-            CHECK_RTN_LOGE_CTN(rtn, "error loading");
+            if(loadFromFile) {
+                rtn = load(sentence, people[i], institute[i], labels[i], words, post_tags, nes, parseTree,
+                           "data/input/" + to_string(i) + ".txt");
+                CHECK_RTN_LOGE_CTN(rtn, "error loading");
+            }
 
             rtn = getFeature(sentence, people[i],institute[i],labels[i],words,post_tags,nes,parseTree,feature);
             CHECK_RTN_LOGE_CTN(rtn, "error getting feature");
@@ -152,8 +167,15 @@ public:
             }else{
                 tmp ="-1 ";
             }
+
             //labelData(words,nes,toWrite[i]);
             toWrite[i]=tmp + feature;
+            /*
+            toWrite[i].push_back('*');
+            toWrite[i].append(people[i]);
+            toWrite[i].push_back('*');
+            toWrite[i].append(institute[i]);
+             */
         }
 
         for(int i=0;i<toWrite.size();i++){
@@ -282,7 +304,24 @@ public:
         rtn = getDetectedPI(person,institute,words,nes,dePerson,deInstitute,PosP,PosI);
         CHECK_RTN_LOGE(rtn,"detect P,i error");
         cerr<<"ins,per: "<<deInstitute<< " "<<dePerson;
+        if(deInstitute<0 || dePerson<0){
+            return -1;
+        }
+
+        rtn = getFeatureByLoc(sentence,dePerson, deInstitute,words,post_tags,nes,parseTree, PosP, PosI, feature);
+        CHECK_RTN_LOGE(rtn,"error on getFeatureByLoc");
+        return 0;
+    }
+
+    int getFeatureByLoc(const string & sentence, const int dePerson, const int deInstitute,
+                        const vector<string> &words,
+                        const vector<string> &post_tags, const vector<string> &nes,
+                        const vector<pair<int, string>> &parseTree,
+                        const set<int>& PosP, const set<int> & PosI,
+                        string & feature) const{
         int subRoot=-1;
+        int rtn =0;
+        cerr<<dePerson<<"#"<<deInstitute<<"#"<<words[dePerson]<<"#"<<words[deInstitute];
         rtn = getRoot(dePerson,deInstitute,parseTree,subRoot);
         CHECK_RTN_LOGE(rtn, "get tree root error");
         cerr<<"root: "<<subRoot<<" :"<<words[subRoot];
@@ -306,6 +345,9 @@ public:
         feature = tree +vec;
         return 0;
     }
+
+
+
 private:
     int getTree(const vector<string> & post_tags, const vector<pair<int, string>> &parseTree, const vector<string> & words,
                 const vector<vector<int>> &children,
@@ -464,7 +506,7 @@ private:
         //cerr<<"finish get root: "<<endl;
         return 0;
     }
-
+public:
     int getDetectedPI(const string &person, const string &institute,
                       const vector<string> &words, const vector<string> &nes,
                       int &dePerson, int &deInstitute, set<int> & PosP, set<int> & PosI ) const {
@@ -518,7 +560,7 @@ private:
 
         for(auto a: dPs){
             PosP.insert(a.second);
-            cerr<<"*"<<a.first<<endl;
+            cerr<<"*"<<a.first<<" ?= "<< person<<endl;
             if(a.first.find(person)!=std::string::npos || person.find(a.first)!=std::string::npos){
                 dePerson=a.second;
             }
@@ -526,7 +568,7 @@ private:
         for(auto a:dIs){
             PosI.insert(a.second);
             int m=100;
-            cerr<<"*"<<a.first<<endl;
+            cerr<<"*"<<a.first<<" ?= "<< institute <<endl;
             if(a.first.find(institute)!=std::string::npos ){
                 deInstitute=a.second;
             }
@@ -540,7 +582,7 @@ private:
         //<<"finish detect PI"<<endl;
         return 0;
     }
-
+private:
     int getFeatureVec(const string & sentence,
                       const vector<string> & post_tags,
                       const vector<string> & words,
@@ -636,18 +678,23 @@ private:
 
 
 public:
-    Model() {
+    Model(bool l=false):loadFromFile(l) {
         int rtn = 0;
-        rtn = LodeDefaultModel();
-        CHECK_RTN_LOGI(rtn, "error in loading models");
+        if(!loadFromFile) {
+            rtn = LodeDefaultModel();
+            CHECK_RTN_LOGI(rtn, "error in loading models");
+        }
         rtn = LoadKeyWords();
         CHECK_RTN_LOGI(rtn, "error in loading keywords");
     }
 
     ~Model() {
         int rtn = 0;
-        rtn = releaseAll();
-        CHECK_RTN_LOGI(rtn, " destruct error");
+
+        if(!loadFromFile) {
+            rtn = releaseAll();
+            CHECK_RTN_LOGI(rtn, " destruct error");
+        }
     }
 
     int LoadKeyWords(){
@@ -668,6 +715,7 @@ public:
     }
 
     int LodeDefaultModel() {
+
         cws_model = segmentor_create_segmentor(cws_model_file.c_str());
         ner_model = ner_create_recognizer(ner_model_file.c_str());
         par_model = parser_create_parser(par_model_file.c_str());
@@ -698,16 +746,17 @@ public:
 
     int releaseAll() {
         int rtn = 0;
-        rtn = postagger_release_postagger(pos_model);
-        CHECK_RTN_LOGE(rtn, "release pos model error");
-        rtn = segmentor_release_segmentor(cws_model);
-        CHECK_RTN_LOGE(rtn, "release seg model error");
-        rtn = parser_release_parser(par_model);
-        CHECK_RTN_LOGE(rtn, "release parser model error");
-        rtn = ner_release_recognizer(ner_model);
-        CHECK_RTN_LOGE(rtn, "release ner model error");
-        rtn = SRL_ReleaseResource();
-        CHECK_RTN_LOGE(rtn, "release SRL error");
+            rtn = postagger_release_postagger(pos_model);
+            CHECK_RTN_LOGE(rtn, "release pos model error");
+            rtn = segmentor_release_segmentor(cws_model);
+            CHECK_RTN_LOGE(rtn, "release seg model error");
+            rtn = parser_release_parser(par_model);
+            CHECK_RTN_LOGE(rtn, "release parser model error");
+            rtn = ner_release_recognizer(ner_model);
+            CHECK_RTN_LOGE(rtn, "release ner model error");
+            rtn = SRL_ReleaseResource();
+            CHECK_RTN_LOGE(rtn, "release SRL error");
+
         return 0;
     }
 };
