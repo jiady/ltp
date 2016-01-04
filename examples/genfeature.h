@@ -30,6 +30,8 @@
 #include "ltp/postag_dll.h"
 #include "ltp/segment_dll.h"
 #include "ltp/SRL_DLL.h"
+#include "tinyxml2.h"
+
 
 using namespace std;
 
@@ -43,6 +45,7 @@ public:
     const string srl_model_file = "ltp_data/srl";
 
     std::vector<std::unordered_set<string>> vec;
+    std::unordered_set<string> nation;
 
     void *cws_model;
     void *ner_model;
@@ -51,11 +54,14 @@ public:
 
     const string input = "data/input.txt";
     const string featureOutput = "svm/data/feature.txt";
+    //const string input = "svm/raw_data/sina_sen_neg.txt";
+    //const string featureOutput = "svm/raw_data/new_sina_sen_neg.txt";
     const string rawData = "svm/data/raw_data.txt";
     const string saveData ="data/save.txt";
 
 
     const bool semantic_tree=true;
+    const bool loadFromFile=true;
 
     int LoadData(vector<string> &sentences, vector<string> &people,
                  vector<string> &institute, vector<int> &label) const {
@@ -74,7 +80,11 @@ public:
             getline(ss, i, '*');
             ss >> l;
             if(p.size()==0 || i.size()==0 || s.size()==0){
-                return -1;
+                cerr<<input<<endl;
+                cerr<<tmp<<endl;
+                cerr<<s<<"#"<<p<<"#"<<i<<"#"<<l<<endl;
+                //return -1;
+                continue;
             }
             sentences.push_back(s);
             people.push_back(p);
@@ -94,6 +104,14 @@ public:
         nes.clear();
         parseTree.clear();
         int len = segmentor_segment(cws_model, sentence, words);
+
+        for(int i=0;i<words.size();i++){
+            if(words[i]=="(" || words[i]=="（" ){
+                words[i]="[";
+            }else if(words[i]==")" || words[i]=="）" ) {
+                words[i] = "]";
+            }
+        }
 
         postagger_postag(pos_model, words, post_tags);
 
@@ -135,13 +153,19 @@ public:
             string & sentence= sentences[i];
             vector<string> words, post_tags,nes;
             vector<pair<int,string>> parseTree;
-            //rtn = parse(sentence,words,post_tags,nes,parseTree);
+            if(!loadFromFile) {
+                rtn = parse(sentence, words, post_tags, nes, parseTree);
+            }
             cerr<<i<<" parse succ"<<endl;
             CHECK_RTN_LOGE_CTN(rtn,"parse error");
             string feature;
+
             //save(sentence,people[i],institute[i],labels[i],words,post_tags,nes,parseTree,"data/input/"+to_string(i)+".txt");
-            rtn = load(sentence,people[i],institute[i],labels[i],words,post_tags,nes,parseTree,"data/input/"+to_string(i)+".txt");
-            CHECK_RTN_LOGE_CTN(rtn, "error loading");
+            if(loadFromFile) {
+                rtn = load(sentence, people[i], institute[i], labels[i], words, post_tags, nes, parseTree,
+                           "data/input/" + to_string(i) + ".txt");
+                CHECK_RTN_LOGE_CTN(rtn, "error loading");
+            }
 
             rtn = getFeature(sentence, people[i],institute[i],labels[i],words,post_tags,nes,parseTree,feature);
             CHECK_RTN_LOGE_CTN(rtn, "error getting feature");
@@ -152,8 +176,15 @@ public:
             }else{
                 tmp ="-1 ";
             }
+
             //labelData(words,nes,toWrite[i]);
             toWrite[i]=tmp + feature;
+            /*
+            toWrite[i].push_back('*');
+            toWrite[i].append(people[i]);
+            toWrite[i].push_back('*');
+            toWrite[i].append(institute[i]);
+             */
         }
 
         for(int i=0;i<toWrite.size();i++){
@@ -282,7 +313,24 @@ public:
         rtn = getDetectedPI(person,institute,words,nes,dePerson,deInstitute,PosP,PosI);
         CHECK_RTN_LOGE(rtn,"detect P,i error");
         cerr<<"ins,per: "<<deInstitute<< " "<<dePerson;
+        if(deInstitute<0 || dePerson<0){
+            return -1;
+        }
+
+        rtn = getFeatureByLoc(sentence,dePerson, deInstitute,words,post_tags,nes,parseTree, PosP, PosI, feature);
+        CHECK_RTN_LOGE(rtn,"error on getFeatureByLoc");
+        return 0;
+    }
+
+    int getFeatureByLoc(const string & sentence, const int dePerson, const int deInstitute,
+                        const vector<string> &words,
+                        const vector<string> &post_tags, const vector<string> &nes,
+                        const vector<pair<int, string>> &parseTree,
+                        const set<int>& PosP, const set<int> & PosI,
+                        string & feature) const{
         int subRoot=-1;
+        int rtn =0;
+        cerr<<dePerson<<"#"<<deInstitute<<"#"<<words[dePerson]<<"#"<<words[deInstitute];
         rtn = getRoot(dePerson,deInstitute,parseTree,subRoot);
         CHECK_RTN_LOGE(rtn, "get tree root error");
         cerr<<"root: "<<subRoot<<" :"<<words[subRoot];
@@ -292,7 +340,7 @@ public:
         CHECK_RTN_LOGE(rtn, "error in getting children");
         cerr<<" children size:"<<children.size()<<" parseTree"<< parseTree.size()<<endl;
         string fullTree;
-        rtn = getTree(post_tags, parseTree,words,children,subRoot,fullTree);
+        rtn = getTree(post_tags, parseTree,words,children,subRoot,fullTree,dePerson,deInstitute);
         CHECK_RTN_LOGE(rtn, "error in getting tree");
         string simpleTree;
         rtn = getSimpleTreeWrapper(post_tags, parseTree,words,children,subRoot,simpleTree,dePerson,deInstitute);
@@ -306,17 +354,23 @@ public:
         feature = tree +vec;
         return 0;
     }
+
+
+
 private:
     int getTree(const vector<string> & post_tags, const vector<pair<int, string>> &parseTree, const vector<string> & words,
                 const vector<vector<int>> &children,
-                const int root, string & feature) const {
+                const int root, string & feature,const int p , const int in) const {
         feature.clear();
         string subTree;
         //cerr<<"getting root:"<<root<<" :size:"<<children[root].size()<<" @ " <<endl;
         int rtn = 0;
         if(children[root].size()==0) {
             if(semantic_tree){
-                feature = "("+parseTree[root].second+" "+words[root]+")";
+                string content = words[root];
+                if(root==p) content="人名";
+                if(root==in) content="机构名";
+                feature = "("+parseTree[root].second+" "+content+")";
             } else {
                 feature = "("+parseTree[root].second+" "+post_tags[root]+")";
             }
@@ -325,7 +379,7 @@ private:
         }
         feature="(" +parseTree[root].second;
         for(int i=0;i<children[root].size();i++) {
-            rtn = getTree(post_tags, parseTree,words, children, children[root][i], subTree);
+            rtn = getTree(post_tags, parseTree,words, children, children[root][i], subTree,p,in);
             feature.push_back(' ');
             feature.append(subTree);
         }
@@ -340,10 +394,12 @@ private:
                              const int root, string & feature, const int p, const int i) const{
         int rtn =0;
         if(root==p){
-            rtn = getSimplePath(post_tags, parseTree, words,children,root,i,feature);
+            string ct="机构名";
+            rtn = getSimplePath(post_tags, parseTree, words,children,root,i,feature,ct);
             CHECK_RTN_LOGE(rtn,"root=p,getSimplePath error");
         }else if(root==i){
-            rtn = getSimplePath(post_tags, parseTree,words,children,root,p,feature);
+            string ct="人名";
+            rtn = getSimplePath(post_tags, parseTree,words,children,root,p,feature, ct);
             CHECK_RTN_LOGE(rtn,"root=i,getSimplePath error");
         }else{
             rtn =getSimpleTree(post_tags, parseTree,words,children,root,feature,p,i);
@@ -355,14 +411,15 @@ private:
     int getSimplePath(const vector<string> & post_tags, const vector<pair<int, string>> &parseTree,
                       const vector<string> & words,
                       const vector<vector<int>> &children,
-                      const int root,  int dest, string & feature) const {
+                      const int root,  int dest, string & feature, const string &ct) const {
         feature.clear();
         string subTree;
        // cerr<<"getting root:"<<root<<" :size:"<<children[root].size()<<" @ " <<endl;
         int rtn = 0;
 
         if(semantic_tree){
-            feature = "(" + parseTree[dest].second + " " + words[dest] + ")";
+            feature = "("+parseTree[dest].second+" "+ct+")";
+            //feature = "(" + parseTree[dest].second + " " + words[dest] + ")";
         }else{
             feature = "(" + parseTree[dest].second + " " + post_tags[dest] + ")";
         }
@@ -397,7 +454,11 @@ private:
             if(!semantic_tree) {
                 feature = "(" + parseTree[root].second + " " + post_tags[root] + ")";
             }else{
-                feature = "(" + parseTree[root].second + " " + words[root] + ")";
+                string content = words[root];
+                if(root==p) content="人名";
+                if(root==i) content="机构名";
+                feature = "("+parseTree[root].second+" "+content+")";
+                //feature = "(" + parseTree[root].second + " " + words[root] + ")";
             }
             return 0;
         }
@@ -464,7 +525,7 @@ private:
         //cerr<<"finish get root: "<<endl;
         return 0;
     }
-
+public:
     int getDetectedPI(const string &person, const string &institute,
                       const vector<string> &words, const vector<string> &nes,
                       int &dePerson, int &deInstitute, set<int> & PosP, set<int> & PosI ) const {
@@ -492,7 +553,7 @@ private:
             }
             else if(nes[i].find("Nh")!=std::string::npos){
                 tP.append(words[i]);
-            }else if(nes[i].find("Ni")!=std::string::npos){
+            }else if(nes[i].find("Ni")!=std::string::npos || (nes[i].find("Ns")!=std::string::npos && nation.count(words[i])>0) ){
                 tI.append(words[i]);
             }
             //cerr<<nes[i];
@@ -518,7 +579,7 @@ private:
 
         for(auto a: dPs){
             PosP.insert(a.second);
-            cerr<<"*"<<a.first<<endl;
+            cerr<<"*"<<a.first<<" ?= "<< person<<endl;
             if(a.first.find(person)!=std::string::npos || person.find(a.first)!=std::string::npos){
                 dePerson=a.second;
             }
@@ -526,7 +587,7 @@ private:
         for(auto a:dIs){
             PosI.insert(a.second);
             int m=100;
-            cerr<<"*"<<a.first<<endl;
+            cerr<<"*"<<a.first<<" ?= "<< institute <<endl;
             if(a.first.find(institute)!=std::string::npos ){
                 deInstitute=a.second;
             }
@@ -540,7 +601,7 @@ private:
         //<<"finish detect PI"<<endl;
         return 0;
     }
-
+private:
     int getFeatureVec(const string & sentence,
                       const vector<string> & post_tags,
                       const vector<string> & words,
@@ -636,22 +697,27 @@ private:
 
 
 public:
-    Model() {
+    Model(bool l=false):loadFromFile(l) {
         int rtn = 0;
-        rtn = LodeDefaultModel();
-        CHECK_RTN_LOGI(rtn, "error in loading models");
+        if(!loadFromFile) {
+            rtn = LodeDefaultModel();
+            CHECK_RTN_LOGI(rtn, "error in loading models");
+        }
         rtn = LoadKeyWords();
         CHECK_RTN_LOGI(rtn, "error in loading keywords");
     }
 
     ~Model() {
         int rtn = 0;
-        rtn = releaseAll();
-        CHECK_RTN_LOGI(rtn, " destruct error");
+
+        if(!loadFromFile) {
+            rtn = releaseAll();
+            CHECK_RTN_LOGI(rtn, " destruct error");
+        }
     }
 
     int LoadKeyWords(){
-        int fileListNum=2;
+        int fileListNum=4;
         vec.resize(fileListNum);
         for(int i=0;i<fileListNum;i++){
             ifstream fin("data/"+to_string(i)+".txt");
@@ -664,10 +730,22 @@ public:
             }
             fin.close();
         }
+        ifstream fin("data/nation.txt");
+        string tmp;
+        if(!fin.good()){
+            return -1;
+        }
+        while(fin>>tmp){
+            nation.insert(tmp);
+        }
+        fin.close();
+
+
         return 0;
     }
 
     int LodeDefaultModel() {
+
         cws_model = segmentor_create_segmentor(cws_model_file.c_str());
         ner_model = ner_create_recognizer(ner_model_file.c_str());
         par_model = parser_create_parser(par_model_file.c_str());
@@ -698,16 +776,17 @@ public:
 
     int releaseAll() {
         int rtn = 0;
-        rtn = postagger_release_postagger(pos_model);
-        CHECK_RTN_LOGE(rtn, "release pos model error");
-        rtn = segmentor_release_segmentor(cws_model);
-        CHECK_RTN_LOGE(rtn, "release seg model error");
-        rtn = parser_release_parser(par_model);
-        CHECK_RTN_LOGE(rtn, "release parser model error");
-        rtn = ner_release_recognizer(ner_model);
-        CHECK_RTN_LOGE(rtn, "release ner model error");
-        rtn = SRL_ReleaseResource();
-        CHECK_RTN_LOGE(rtn, "release SRL error");
+            rtn = postagger_release_postagger(pos_model);
+            CHECK_RTN_LOGE(rtn, "release pos model error");
+            rtn = segmentor_release_segmentor(cws_model);
+            CHECK_RTN_LOGE(rtn, "release seg model error");
+            rtn = parser_release_parser(par_model);
+            CHECK_RTN_LOGE(rtn, "release parser model error");
+            rtn = ner_release_recognizer(ner_model);
+            CHECK_RTN_LOGE(rtn, "release ner model error");
+            rtn = SRL_ReleaseResource();
+            CHECK_RTN_LOGE(rtn, "release SRL error");
+
         return 0;
     }
 };
