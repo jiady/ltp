@@ -45,7 +45,9 @@ public:
     const string srl_model_file = "ltp_data/srl";
 
     std::vector<std::unordered_set<string>> vec;
-    std::unordered_set<string> nation;
+    std::unordered_set<string> nation,jigou;
+
+
 
     void *cws_model;
     void *ner_model;
@@ -95,6 +97,14 @@ public:
         return 0;
     }
 
+    static bool inline hasEnding(std::string const &fullString, std::string const &ending) {
+        if (fullString.length() >= ending.length()) {
+            return (0 == fullString.compare (fullString.length() - ending.length(), ending.length(), ending));
+        } else {
+            return false;
+        }
+    }
+
     int parse(const string &sentence, vector<string> &words,
               vector<string> &post_tags, vector<string> &nes,
               vector<pair<int, string>> &parseTree
@@ -105,17 +115,26 @@ public:
         parseTree.clear();
         int len = segmentor_segment(cws_model, sentence, words);
 
+
+
+        postagger_postag(pos_model, words, post_tags);
+
+        ner_recognize(ner_model, words, post_tags, nes);
         for(int i=0;i<words.size();i++){
             if(words[i]=="(" || words[i]=="（" ){
                 words[i]="[";
             }else if(words[i]==")" || words[i]=="）" ) {
                 words[i] = "]";
             }
+            if(nes[i]=="O") {
+                for (auto jigou_suffix:jigou) {
+                    if (hasEnding(words[i], jigou_suffix)) {
+                        nes[i]="S-Ni";
+                    }
+                }
+            }
         }
 
-        postagger_postag(pos_model, words, post_tags);
-
-        ner_recognize(ner_model, words, post_tags, nes);
 
         std::vector<int> heads;
         std::vector<std::string> deprels;
@@ -160,7 +179,7 @@ public:
             CHECK_RTN_LOGE_CTN(rtn,"parse error");
             string feature;
 
-            //save(sentence,people[i],institute[i],labels[i],words,post_tags,nes,parseTree,"data/input/"+to_string(i)+".txt");
+            save(sentence,people[i],institute[i],labels[i],words,post_tags,nes,parseTree,"data/input/"+to_string(i)+".txt");
             if(loadFromFile) {
                 rtn = load(sentence, people[i], institute[i], labels[i], words, post_tags, nes, parseTree,
                            "data/input/" + to_string(i) + ".txt");
@@ -507,12 +526,18 @@ private:
         }
         unordered_set<int> path;
         path.insert(a);
+        cerr<<"people link:::"<<a<<"__";
         while(parseTree[a].first-1>=0){
             a=parseTree[a].first-1;
+            cerr<<a<<"__";
             path.insert(a);
         }
-        while(parseTree[b].first-1>0){
+        cerr<<endl;
+
+        cerr<<"ins link:::"<<b<<"__";
+        while(parseTree[b].first-1>=0){
             b=parseTree[b].first-1;
+            cerr<<b<<"__";
             if(path.count(b)>0){
                 root = b;
                 break;
@@ -520,8 +545,11 @@ private:
         }
         if(root<0){
             cerr<<" root is -1"<<endl;
+            //cerr<<"a:"<<a<<"b:"<<b;
+            //root=max(a,b);
             return -1;
         }
+
         //cerr<<"finish get root: "<<endl;
         return 0;
     }
@@ -530,30 +558,34 @@ public:
                       const vector<string> &words, const vector<string> &nes,
                       int &dePerson, int &deInstitute, set<int> & PosP, set<int> & PosI ) const {
 
-        map<string,int> dPs, dIs;
+        map<string,vector<int>> dPs, dIs;
         string tI,tP;
         for(int i=0;i<words.size();i++){
             if(nes[i].find("O")!=std::string::npos){
                 if(tI.size()>0){
+                    /*
                     if(dIs.count(tI)>0) {
                         cerr << "more than one ins " << tI;
                         return -1;
                     }
-                    dIs[tI]=i-1;
+                     */
+                    dIs[tI].push_back(i-1);
                     tI.clear();
                 }
                 if(tP.size()>0){
+                    /*
                     if(dPs.count(tP)>0){
                         cerr<< "more than one people "<< tP<< endl;
                         return -1;
                     }
-                    dPs[tP]=i-1;
+                     */
+                    dPs[tP].push_back(i-1);
                     tP.clear();
                 }
             }
             else if(nes[i].find("Nh")!=std::string::npos){
                 tP.append(words[i]);
-            }else if(nes[i].find("Ni")!=std::string::npos || (nes[i].find("Ns")!=std::string::npos && nation.count(words[i])>0) ){
+            }else if(nes[i].find("Ni")!=std::string::npos || (nes[i].find("Ns")!=std::string::npos /*&& nation.count(words[i])>0 */) ){
                 tI.append(words[i]);
             }
             //cerr<<nes[i];
@@ -561,43 +593,61 @@ public:
         }
 
         if(tI.size()>0){
+            /*
             if(dIs.count(tI)>0) {
                 cerr << "more than one ins " << tI;
                 return -1;
             }
-            dIs[tI]=(int)words.size()-1;
+             */
+            dIs[tI].push_back((int)words.size()-1);
             tI.clear();
         }
         if(tP.size()>0){
+            /*
             if(dPs.count(tP)>0){
                 cerr<< "more than one people "<< tP;
                 return -1;
             }
-            dPs[tP]=(int)words.size()-1;
+             */
+            dPs[tP].push_back((int)words.size()-1);
             tP.clear();
         }
 
+
+        vector<int> listP,listI;
         for(auto a: dPs){
-            PosP.insert(a.second);
+            PosP.insert(a.second.begin(),a.second.end());
             cerr<<"*"<<a.first<<" ?= "<< person<<endl;
             if(a.first.find(person)!=std::string::npos || person.find(a.first)!=std::string::npos){
-                dePerson=a.second;
+                listP=a.second;
             }
         }
         for(auto a:dIs){
-            PosI.insert(a.second);
+            PosI.insert(a.second.begin(),a.second.end());
             int m=100;
             cerr<<"*"<<a.first<<" ?= "<< institute <<endl;
             if(a.first.find(institute)!=std::string::npos ){
-                deInstitute=a.second;
+                listI=a.second;
             }
             if(institute.find(a.first)!=std::string::npos ){
                 if((int)institute.size()-(int)a.first.size()<m){
-                    deInstitute=a.second;
+                    listI=a.second;
                     m=(int)institute.size()-(int)a.first.size();
                 }
             }
         }
+
+        int m=100;
+        for(int i=0;i<listP.size();i++){
+            for(int j=0;j<listI.size();j++){
+                if(abs(listI[i]-listP[j])<m){
+                    deInstitute=listI[i];
+                    dePerson=listP[j];
+                    m= abs(listI[i]-listP[j]);
+                }
+            }
+        }
+
         //<<"finish detect PI"<<endl;
         return 0;
     }
@@ -737,6 +787,15 @@ public:
         }
         while(fin>>tmp){
             nation.insert(tmp);
+        }
+        fin.close();
+
+        fin.open("data/jigou.txt");
+        if(!fin.good()){
+            return -1;
+        }
+        while(fin>>tmp){
+            jigou.insert(tmp);
         }
         fin.close();
 

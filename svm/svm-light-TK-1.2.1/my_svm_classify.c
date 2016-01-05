@@ -80,7 +80,7 @@ int main (int argc, char* argv[])
 //    if(line[0] == '#') continue;  /* line contains comments */
     parse_document(line,&doc,&doc_label,&wnum,max_words_doc,&model.kernel_parm);
     totdoc++;
-    printf("doc@%ld\n",totdoc);
+    //printf("doc@%ld\n",totdoc);
     if(model.kernel_parm.kernel_type == 0) {   /* linear kernel */
       for(j=0;(doc.vectors[0]->words[j]).wnum != 0;j++) {  /* Check if feature numbers   */
 	if((doc.vectors[0]->words[j]).wnum>model.totwords) /* are not larger than in     */

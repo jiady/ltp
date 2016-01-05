@@ -65,6 +65,8 @@ int main(){
         cout<< attributeOfWeibo->Name() << ":" << attributeOfWeibo->Value() << endl;
         id=attributeOfWeibo->Value();
         text= weibo->GetText();
+        weibo->DeleteChildren();
+        weibo->SetText(text.c_str());
         //cout<<id<<" "<<text<<endl;
         cerr<<id<<"#"<<text<<endl;
         for(auto a:mp[id]) {

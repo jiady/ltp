@@ -91,7 +91,7 @@ public:
              */
             weibo=weibo->NextSiblingElement();
         }
-#pragma omp parallel for
+//#pragma omp parallel for
         for(int i=0;i<sens.size();i++){
             int rtn =0;
             rtn = GetSentenceFeature(sens[i],ids[i], tmpOfStream,rawOfStream);
@@ -112,7 +112,7 @@ public:
         vector<int> ins ,people;
         set<int> PosP,PosI;
         for(int i=0;i<nes.size();i++){
-            if(nes[i]=="S-Ni" || nes[i]=="E-Ni" || (nes[i]=="S-Ns" && nation.count(words[i])>0) ){
+            if(nes[i]=="S-Ni" || nes[i]=="E-Ni" || (nes[i]=="S-Ns" /* && nation.count(words[i])>0 */ ) ){
                 ins.push_back(i);
                 PosI.insert(i);
             }else if(nes[i]=="S-Nh" || nes[i] == "E-Nh" ){
@@ -129,7 +129,7 @@ public:
                 int rtn =0;
                 rtn = model.getFeatureByLoc(sentence, people[j],ins[i],words,post_tags,nes,parseTree,PosP,PosI,feature);
                 CHECK_RTN_LOGE_CTN(rtn,"feature get by loc error at"+ ins[i]+people[j]);
-#pragma omp critical
+//#pragma omp critical
                 {
                     tmpOfStream << id << " " << feature << endl;
                 }
@@ -157,7 +157,7 @@ public:
                 for(k++;k<=people[j];k++){
                     allp.append(words[k]);
                 }
-#pragma omp critical
+//#pragma omp critical
                 {
                     rawOfStream << id << "*" << alli << "*" << allp << endl;
                 }
