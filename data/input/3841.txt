@@ -1,12 +1,12 @@
-赵国政和吕艺生在舞坛很有名气，一位曾多年担任解放军艺术学院的舞蹈系主任，一位长期奋斗在北京舞蹈学院院长的工作岗位上。
-赵国政
-北京舞蹈学院
-0
-35
-赵国政 和 吕艺生 在 舞坛 很 有 名气 ， 一 位 曾 多年 担任 解放军 艺术 学院 的 舞蹈系 主任 ， 一 位 长期 奋斗 在 北京 舞蹈 学院 院长 的 工作 岗位 上 。 
-35
-nh c nh p n d v n wp m q d m v n n n u n n wp m q d v p ns n n n u v n nd wp 
-35
-S-Nh O S-Nh O O O O O O O O O O O B-Ni I-Ni E-Ni O O O O O O O O O B-Ni I-Ni E-Ni O O O O O O 
-35
-7 SBV 3 LAD 1 COO 7 ADV 4 POB 7 ADV 0 HED 7 VOB 7 WP 11 ATT 14 SBV 13 ATT 14 ADV 7 COO 17 ATT 17 ATT 20 ATT 17 RAD 20 ATT 14 VOB 14 WP 23 ATT 25 SBV 25 ADV 14 COO 25 CMP 29 ATT 29 ATT 30 ATT 32 ATT 30 RAD 33 ATT 34 ATT 26 POB 7 WP 
+据新华社北京１月１２日电（记者周志方、赵秀娟）话剧《虎踞钟山》在京城引起强烈反响，连日来，中央和北京市各大新闻媒体以各种形式，介绍这部弘扬主旋律的优秀作品。
+赵秀娟
+新华社
+1
+45
+据 新华社 北京 １月 １２日 电 [ 记者 周志方 、 赵秀娟 ] 话剧 《 虎 踞 钟山 》 在 京城 引起 强烈 反响 ， 连日来 ， 中央 和 北京市 各 大 新闻 媒体 以 各种 形式 ， 介绍 这部 弘扬 主旋律 的 优秀 作品 。 
+45
+p ni ns nt nt n wp n nh wp nh wp n wp n v ns wp p ns v a n wp i wp n c ns r a n n p r n wp v r v n u a n wp 
+45
+O S-Ni S-Ns O O O O O S-Nh O S-Nh O O O O O S-Ns O O S-Ns O O O O O O O O S-Ns O O O O O O O O O S-Ni O O O O O O 
+45
+21 ADV 6 SBV 6 ADV 5 ATT 6 ADV 1 POB 9 WP 9 ATT 21 SBV 11 WP 9 COO 9 WP 16 ATT 16 WP 16 SBV 21 SBV 16 VOB 16 WP 21 ADV 19 POB 0 HED 23 ATT 21 VOB 21 WP 38 ADV 25 WP 33 ATT 29 LAD 27 COO 33 ATT 33 ATT 33 ATT 38 SBV 38 ADV 36 ATT 34 POB 34 WP 21 COO 44 ATT 44 ATT 40 VOB 40 RAD 44 ATT 38 VOB 21 WP 

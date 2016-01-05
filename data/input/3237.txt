@@ -7,6 +7,6 @@
 27
 r ns nt nt n n nh v wp n n n wp j wp v v v n m q n nt p ni v wp 
 27
-O S-Ns O O O O S-Nh O O O O O O O O O O O O O O O O O S-Ni O O 
+S-Ni S-Ns O O O O S-Nh O O O O O O O O O O O O O O O O O S-Ni O O 
 27
 5 SBV 5 ADV 4 ATT 5 ADV 0 HED 7 ATT 8 SBV 5 COO 8 WP 12 ATT 12 ATT 17 ATT 14 WP 16 ATT 14 WP 17 ATT 19 ATT 19 ATT 22 ATT 21 ATT 22 ATT 26 FOB 26 ADV 26 ADV 24 POB 5 VOB 5 WP 

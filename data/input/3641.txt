@@ -1,12 +1,12 @@
-新华社北京１月１６日电（记者谭国器）国家主席江泽民今天在中南海会见了美国朗讯科技公司董事长亨利?沙赫特及其一行。
-江泽民
-新华社
-0
-28
-新华社 北京 １月 １６日 电 （ 记者 谭国器 ） 国家 主席 江泽民 今天 在 中南海 会见 了 美国 朗讯 科技 公司 董事长 亨利 ? 沙赫特 及其 一行 。 
-28
-ni ns nt nt n wp n nh wp n n nh nt p ns v u ns nz n n n nh wp nh c n wp 
-28
-S-Ni S-Ns O O O O O S-Nh O O O S-Nh O O S-Ns O O B-Ni I-Ni I-Ni E-Ni O S-Nh O S-Nh O O O 
-28
-5 SBV 5 ADV 4 ATT 5 ADV 0 HED 8 WP 8 ATT 5 CMP 8 WP 11 ATT 12 ATT 16 SBV 16 ADV 16 ADV 14 POB 5 VOB 16 RAD 21 ATT 21 ATT 21 ATT 22 ATT 23 ATT 16 VOB 16 WP 16 COO 27 LAD 25 COO 5 WP 
+秦华孙在谈到联合国会费问题时说，中国强调应按照《联合国宪章》和联大有关规定，按照支付能力原则制定会费分摊比额表。
+秦华孙
+中国
+1
+33
+秦华孙 在 谈 到 联合国 会费 问题 时 说 ， 中国 强调 应 按照 《 联合国 宪章 》 和 联大 有关 规定 ， 按照 支付 能力 原则 制定 会费 分摊 比额 表 。 
+33
+nh p v v ni n n n v wp ns v v p wp ni n wp c j v n wp p v n n v n v n n wp 
+33
+S-Nh O O O S-Ni O O O O O S-Ns O O O O S-Ni O O O O O O O O O O O O O O O O O 
+33
+9 SBV 9 ADV 8 ATT 3 CMP 6 ATT 7 ATT 3 VOB 2 POB 0 HED 9 WP 12 SBV 9 VOB 28 ADV 28 ADV 17 WP 17 ATT 14 POB 17 WP 20 LAD 17 COO 22 ATT 14 POB 14 WP 28 ADV 26 ATT 27 ATT 24 POB 12 VOB 28 VOB 32 ATT 32 ATT 28 VOB 9 WP 

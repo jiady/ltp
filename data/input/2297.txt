@@ -7,6 +7,6 @@
 25
 nh v n m q wp v v nl n v m q wp m v v n n u wp n wp v wp 
 25
-S-Nh O O O O O O O O O O O O O O O O B-Ni E-Ni O O O O O O 
+S-Nh O O O O O O O O O O O O O S-Ni O O B-Ni E-Ni O O O O O O 
 25
 2 SBV 0 HED 2 VOB 5 ATT 2 VOB 2 WP 2 COO 7 CMP 10 ATT 8 POB 7 VOB 13 ATT 11 VOB 7 WP 16 ADV 2 COO 16 VOB 19 ATT 17 VOB 17 RAD 22 WP 24 FOB 22 WP 17 VOB 2 WP 

@@ -1,12 +1,12 @@
-在今天国家民委与彭楚政先进事迹报告团成员召开的座谈会上，国家民委领导宣读了授予彭楚政这一荣誉称号的决定，向彭楚政颁发了荣誉证书。
-彭楚政
-国家民委
-0
-36
-在 今天 国家 民委 与 彭楚政 先进 事迹 报告团 成员 召开 的 座谈会 上 ， 国家 民委 领导 宣读 了 授予 彭楚政 这 一 荣誉 称号 的 决定 ， 向 彭楚政 颁发 了 荣誉 证书 。 
-36
-p nt n j p nh a n n n v u n nd wp n j n v u v nh r m n n u n wp p nh v u n n wp 
-36
-O O B-Ni E-Ni O S-Nh O O O O O O O O O B-Ni E-Ni O O O O S-Nh O O O O O O O O S-Nh O O O O O 
-36
-19 ADV 11 ADV 4 ATT 11 SBV 10 LAD 8 ATT 8 ATT 9 ATT 10 ATT 4 COO 13 ATT 11 RAD 14 ATT 1 POB 1 WP 17 ATT 18 ATT 19 SBV 0 HED 19 RAD 28 ATT 26 ATT 24 ATT 26 ATT 26 ATT 21 VOB 21 RAD 19 VOB 19 WP 32 ADV 30 POB 19 COO 32 RAD 35 ATT 32 VOB 19 WP 
+农业部市场信息司司长闵耀良近两年农业连续丰收，特别是去年一年一些“菜篮子”产品的价格有所下降，城镇居民普遍比较满意。
+闵耀良
+农业部市场信息司
+1
+33
+农业部 市场 信息司 司长 闵耀良 近 两 年 农业 连续 丰收 ， 特别 是 去年 一 年 一些 “ 菜篮子 ” 产品 的 价格 有所 下降 ， 城镇 居民 普遍 比较 满意 。 
+33
+ni n n n nh a m q n a v wp d v nt m q m wp n wp n u n v v wp n n a d v wp 
+33
+B-Ni I-Ni E-Ni O S-Nh O O O O O O O O O O O O O O O O O O O O O O O O O O O O 
+33
+3 ATT 3 ATT 4 ATT 5 ATT 11 SBV 7 ATT 8 ATT 9 ATT 11 SBV 11 ADV 0 HED 11 WP 14 ADV 26 ADV 26 ADV 17 ATT 24 ATT 22 ATT 20 WP 22 ATT 20 WP 24 ATT 22 RAD 26 SBV 26 ADV 11 COO 26 WP 29 ATT 32 SBV 32 ADV 32 ADV 26 COO 11 WP 

@@ -1,12 +1,12 @@
-著名法学专家何山、国家文物鉴定委员会常委刘九庵等诸多法律界、文物界人士纷纷发表见解。
-何山
-国家文物鉴定委员会
-0
-21
-著名 法学 专家 何山 、 国家 文物 鉴定 委员会 常委 刘九庵 等 诸多 法律界 、 文物界 人士 纷纷 发表 见解 。 
-21
-a n n nh wp n n v n n nh u m n wp n n d v n wp 
-21
-O O O S-Nh O B-Ni I-Ni I-Ni E-Ni O S-Nh O O O O O O O O O O 
-21
-3 ATT 3 ATT 4 ATT 10 ATT 8 WP 7 ATT 8 FOB 9 ATT 10 ATT 11 ATT 17 ATT 11 RAD 14 ATT 17 ATT 16 WP 14 COO 19 SBV 19 ADV 0 HED 19 VOB 19 WP 
+国务院副总理李岚清、国务委员罗干以及有关方面负责人钱冠林等参加了这次接见并和代表们合影留念。
+罗干
+国务院
+1
+25
+国务院 副 总理 李岚清 、 国务委员 罗干 以及 有关 方面 负责人 钱冠林 等 参加 了 这 次 接见 并 和 代表 们 合影 留念 。 
+25
+ni b n nh wp n nh c v n n nh u v u r q v c p n k v v wp 
+25
+S-Ni O O S-Nh O O S-Nh O O O O S-Nh O O O O O O O O O O O O O 
+25
+3 ATT 3 ATT 4 ATT 14 SBV 7 WP 7 ATT 4 COO 12 LAD 10 ATT 11 ATT 12 ATT 4 COO 4 RAD 0 HED 14 RAD 17 ATT 18 ATT 14 VOB 23 ADV 23 ADV 20 POB 21 RAD 18 COO 23 COO 14 WP 

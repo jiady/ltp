@@ -7,6 +7,6 @@
 8
 n p n b n nh v wp 
 8
-O O O O O S-Nh O O 
+O O S-Ni O O S-Nh O O 
 8
 7 FOB 7 ADV 5 ATT 5 ATT 6 ATT 2 POB 0 HED 7 WP 

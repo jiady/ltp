@@ -7,6 +7,6 @@
 36
 n n n nh n m v u v wp wp n k v m q n wp v u wp nt wp v r v v p r v r u v u wp wp 
 36
-B-Ni E-Ni O S-Nh O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O 
+B-Ni E-Ni O S-Nh O O O O O O O O O O O O O O O O O O O O O O O O O S-Ni O O O O O O 
 36
 2 ATT 3 ATT 4 ATT 5 ATT 9 SBV 9 ADV 9 ADV 7 RAD 0 HED 9 WP 14 WP 14 SBV 12 RAD 9 VOB 16 ATT 17 ATT 14 CMP 14 WP 14 COO 19 RAD 14 WP 26 ADV 22 WP 26 ADV 26 SBV 14 COO 26 CMP 30 ADV 28 POB 26 COO 33 ATT 31 RAD 30 VOB 33 RAD 14 WP 14 WP 

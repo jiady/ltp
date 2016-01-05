@@ -7,6 +7,6 @@
 32
 nh d v wp ns d p ni j n nh nt p j v r p ns p ns n v u n nd wp d v v r v wp 
 32
-S-Nh O O O S-Ns O O B-Ni E-Ni O S-Nh O O O O O O S-Ns O S-Ns O O O O O O O O O O O O 
+S-Nh O O O S-Ns O O B-Ni E-Ni O S-Nh O O O S-Ni O O S-Ns O S-Ns O O O O O O O O O O O O 
 32
 3 SBV 3 ADV 0 HED 3 WP 28 SBV 28 ADV 28 ADV 9 ATT 10 ATT 11 ATT 15 SBV 15 ADV 15 ADV 13 POB 25 ATT 22 SBV 22 ADV 17 POB 22 ADV 21 ATT 19 POB 24 ATT 22 RAD 15 VOB 7 POB 7 WP 28 ADV 3 VOB 28 VOB 31 ATT 29 VOB 3 WP 

@@ -7,6 +7,6 @@
 22
 r n nh n j nt v n wp v p v n u n v m q u v v wp 
 22
-O O S-Nh B-Ni E-Ni O O O O O O O O O O O O O O O O O 
+S-Ni O S-Nh B-Ni E-Ni O O O O O O O O O O O O O O O O O 
 22
 2 ATT 3 ATT 5 ATT 5 ATT 7 SBV 7 ADV 0 HED 7 VOB 7 WP 7 COO 16 ADV 15 ATT 12 VOB 12 RAD 11 POB 10 VOB 18 ATT 21 ATT 18 RAD 21 ATT 16 VOB 7 WP 

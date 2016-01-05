@@ -1,12 +1,12 @@
-今天上午，全国妇联副主席、书记处书记刘海荣专程到医院看望唐胜利。
-唐胜利
-全国妇联
+李鹏对贝克特作为香港回归中国后首位英国高级官员和英国工党新政府成立后第一位内阁成员访华表示“特殊的欢迎”。
+李鹏
+英国工党
 0
-17
-今天 上午 ， 全国 妇联 副 主席 、 书记处 书记 刘海荣 专程 到 医院 看望 唐胜利 。 
-17
-nt nt wp n j b n wp n n nh d v n v nh wp 
-17
-O O O B-Ni E-Ni O O O O O S-Nh O O O O S-Nh O 
-17
-2 ATT 15 ADV 2 WP 5 ATT 7 ATT 7 ATT 11 ATT 10 WP 10 ATT 7 COO 15 SBV 15 ADV 15 ADV 13 POB 0 HED 15 VOB 15 WP 
+32
+李鹏 对 贝克特 作为 香港 回归 中国 后 首 位 英国 高级 官员 和 英国 工党 新 政府 成立 后 第一 位 内阁 成员 访华 表示 “ 特殊 的 欢迎 ” 。 
+32
+nh p nh v ns v ns nd m q ns a n c ns n a n v nd m q n n v v wp a u v wp wp 
+32
+S-Nh O S-Nh O S-Ns O S-Ns O O O S-Ns O O O B-Ni E-Ni O O O O O O O O O O O O O O O O 
+32
+26 SBV 26 ADV 2 POB 26 ADV 6 SBV 8 ATT 6 VOB 19 ADV 10 ATT 13 ATT 13 ATT 13 ATT 19 SBV 18 LAD 16 ATT 18 ATT 18 ATT 13 COO 20 ATT 26 ADV 22 ATT 24 ATT 24 ATT 25 SBV 26 SBV 0 HED 30 WP 30 ATT 28 RAD 26 VOB 30 WP 26 WP 

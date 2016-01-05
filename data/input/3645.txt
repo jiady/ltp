@@ -1,12 +1,12 @@
-民政部部长多吉才让代表全国双拥工作领导小组作了１９９７年双拥工作总结。
-多吉才让
-民政部
+公安部消防局局长长孙介绍，去年全国公安消防部队共出动灭火１４万余起，出动警力２００多万人次，抢救被困人员５６００多人。
+长孙
+公安部消防局
 1
-16
-民政部 部长 多吉才让 代表 全国 双拥 工作 领导 小组 作 了 １９９７年 双拥 工作 总结 。 
-16
-ni n nh v n j v v n v u nt j v v wp 
-16
-S-Ni O S-Nh O B-Ni I-Ni I-Ni I-Ni E-Ni O O O O O O O 
-16
-2 ATT 3 ATT 4 SBV 0 HED 7 ATT 7 ATT 9 ATT 9 ATT 4 VOB 4 COO 10 RAD 15 ATT 14 ATT 15 ATT 10 VOB 4 WP 
+33
+公安部 消防局 局长 长孙 介绍 ， 去年 全国 公安 消防 部队 共 出动 灭火 １４万 余 起 ， 出动 警力 ２００ 多 万 人次 ， 抢救 被 困 人员 ５６００ 多 人 。 
+33
+ni n n nh v wp nt n n b n d v v m m q wp v n m m m q wp v p a n m m n wp 
+33
+B-Ni E-Ni O S-Nh O O O O O O O O O O O O O O O O O O O O O O O O O O O O O 
+33
+2 ATT 3 ATT 4 ATT 5 SBV 0 HED 5 WP 13 ADV 11 ATT 11 ATT 11 ATT 13 SBV 13 ADV 5 VOB 13 COO 17 ATT 15 RAD 14 CMP 13 WP 13 COO 24 ATT 23 ATT 21 RAD 24 ATT 19 VOB 13 WP 13 COO 29 ATT 29 ATT 32 ATT 32 ATT 30 RAD 26 VOB 5 WP 

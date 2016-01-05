@@ -7,6 +7,6 @@
 49
 n n b n nh v wp ns v m n d v n n wp ns n n nd v v wp c d v m n v ns n v wp v n v wp v v n wp v a n v v v n wp 
 49
-B-Ni E-Ni O O S-Nh O O S-Ns O O O O O O O O S-Ns O O O O O O O O O O O O S-Ns O O O O O O O O O O O O O O O O O O O 
+B-Ni E-Ni O O S-Nh O O S-Ns O O O O O O O O S-Ns O O O O O O O O O O O O S-Ns S-Ni O O O O O O O O O O O O O O O O O O 
 49
 2 ATT 4 ATT 4 ATT 5 ATT 6 SBV 0 HED 6 WP 11 ATT 11 ATT 11 ATT 13 SBV 13 ADV 6 VOB 15 ATT 13 VOB 13 WP 18 ATT 19 ATT 20 ATT 22 ADV 22 ADV 13 COO 13 WP 26 ADV 26 ADV 13 COO 28 ATT 26 DBL 26 VOB 31 ATT 29 VOB 29 VOB 29 WP 29 COO 34 VOB 34 COO 36 WP 36 COO 40 ATT 38 VOB 38 WP 38 COO 44 ATT 42 DBL 46 SBV 42 VOB 46 VOB 47 VOB 6 WP 

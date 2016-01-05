@@ -7,6 +7,6 @@
 38
 r ns nt nt n n nh p nt p ns v u n v n n nd v wp ni wp ni v v u nt n v b v v v i d a n wp 
 38
-O S-Ns O O O O S-Nh O O O S-Ns O O B-Ni I-Ni E-Ni O O O O S-Ni O S-Ni O O O O O O O O O O O O O O O 
+S-Ni S-Ns O O O O S-Nh O O O S-Ns O O B-Ni I-Ni E-Ni O O O O S-Ni O S-Ni O O O O O O O O O O O O O O O 
 38
 5 SBV 5 ADV 4 ATT 5 ADV 0 HED 7 ATT 19 SBV 19 ADV 8 POB 12 ADV 10 POB 17 ATT 12 RAD 16 ATT 16 ATT 17 ATT 18 ATT 8 POB 5 VOB 19 WP 24 SBV 23 WP 21 COO 32 ATT 24 COO 24 RAD 32 ATT 31 ATT 31 ATT 31 ATT 32 ATT 33 SBV 19 VOB 37 ATT 36 ADV 37 ATT 33 VOB 5 WP 

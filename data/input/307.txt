@@ -7,6 +7,6 @@
 29
 r n n nh v wp nt v wp m q n n v c v wp v ni v u wp n n wp v m q wp 
 29
-O O O S-Nh O O O O O O O O O O O O O O S-Ni O O O O O O O O O O 
+S-Ni O O S-Nh O O O O O O O O O O O O O O S-Ni O O O O S-Ni O O O O O 
 29
 2 SBV 0 HED 4 ATT 5 SBV 2 COO 5 WP 8 ADV 14 ADV 8 WP 11 ATT 13 ATT 13 ATT 14 SBV 5 VOB 16 LAD 14 COO 14 WP 14 COO 20 SBV 24 ATT 20 RAD 24 WP 24 ATT 26 SBV 24 WP 18 VOB 28 ATT 26 CMP 2 WP 

@@ -1,12 +1,12 @@
-李波王锋元旦前夕，河南省西峡县五里桥乡乡长杨海韬匆匆赶到西峡县城关高中，替自己的扶贫特困生乔改玉交足了１９９８年上学期的学杂费。
-乔改玉
-西峡县城关高中
-0
-31
-李波 王锋 元旦 前夕 ， 河南省 西峡县 五里桥乡 乡长 杨海韬 匆匆 赶到 西峡县 城关 高中 ， 替 自己 的 扶贫 特困生 乔改玉 交 足 了 １９９８年 上 学期 的 学杂费 。 
-31
-nh nh nt nd wp ns ns ns n nh z v ns nz n wp p r u v n nh v a u nt nd n u n wp 
-31
-B-Nh E-Nh O O O B-Ns I-Ns E-Ns O S-Nh O O B-Ni I-Ni E-Ni O O O O O O S-Nh O O O O O O O O O 
-31
-2 ATT 4 ATT 4 ATT 12 ADV 4 WP 7 ATT 8 ATT 9 ATT 10 ATT 12 SBV 12 ADV 0 HED 15 ATT 15 ATT 12 VOB 12 WP 23 ADV 21 ATT 18 RAD 21 ATT 22 ATT 17 POB 12 COO 23 CMP 23 RAD 27 ATT 28 ATT 30 ATT 28 RAD 23 VOB 12 WP 
+据新华社联合国１月１２日电（记者周锡生）联合国秘书长安南１２日在这里举行的记者招待会上，劝告伊拉克不要在联合国武器核查问题上采取鲁莽行动，以免激化双方在这一问题上的矛盾。
+安南
+联合国
+1
+46
+据 新华社 联合国 １月 １２日 电 [ 记者 周锡生 ] 联合国 秘书长 安南 １２日 在 这里 举行 的 记者 招待会 上 ， 劝告 伊拉克 不要 在 联合国 武器 核查 问题 上 采取 鲁莽 行动 ， 以免 激化 双方 在 这 一 问题 上 的 矛盾 。 
+46
+p ni ni nt nt n wp n nh wp ni n nh nt p r v u n n nd wp v ns d p ni n v n nd v a v wp c v n p r m n nd u a wp 
+46
+O B-Ni E-Ni O O O O O S-Nh O S-Ni O S-Nh O O O O O O O O O O S-Ns O O S-Ni O O O O O O O O O O O O O O O O O O O 
+46
+0 HED 6 SBV 6 ADV 5 ATT 6 ADV 1 POB 9 WP 9 ATT 6 COO 9 WP 12 ATT 13 ATT 23 SBV 23 ADV 23 ADV 15 POB 20 ATT 17 RAD 20 ATT 21 ATT 15 POB 15 WP 6 VOB 23 DBL 32 ADV 32 ADV 28 ATT 29 FOB 30 ATT 31 ATT 26 POB 23 VOB 34 ATT 32 VOB 32 WP 37 ADV 32 COO 45 ATT 45 ATT 41 ATT 42 ATT 43 ATT 39 POB 39 RAD 37 VOB 1 WP 

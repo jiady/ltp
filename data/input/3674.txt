@@ -1,12 +1,12 @@
-新华社华盛顿１月１２日电（记者翟景升）美国经济界人士预计，由于亚洲金融危机目前尚未出现减缓迹象，美国经济受此影响，今年的增长速度将明显低于去年。
-翟景升
-新华社
+国务院总理李鹏为这次会议作出批示，要求航空工业要大力推进两个根本转变，切实搞好结构调整、技术开发和市场营销工作。
+李鹏
+国务院
 1
-39
-新华社 华盛顿 １月 １２日 电 （ 记者 翟景升 ） 美国 经济界 人士 预计 ， 由于 亚洲 金融 危机 目前 尚未 出现 减缓 迹象 ， 美国 经济 受 此 影响 ， 今年 的 增长 速度 将 明显 低于 去年 。 
-39
-ni ns nt nt n wp n nh wp ns n n v wp p ns n n nt d v v n wp ns n v r v wp nt u v n d a v nt wp 
-39
-S-Ni S-Ns O O O O O S-Nh O S-Ns O O O O O S-Ns O O O O O O O O S-Ns O O O O O O O O O O O O O O 
-39
-5 SBV 5 ADV 4 ATT 5 ADV 0 HED 8 WP 8 ATT 5 CMP 8 WP 12 ATT 12 ATT 13 SBV 5 VOB 13 WP 27 ADV 18 ATT 18 ATT 21 SBV 21 ADV 21 ADV 15 POB 21 VOB 22 VOB 15 WP 26 ATT 27 SBV 13 VOB 29 ATT 27 VOB 27 WP 34 ATT 31 RAD 34 ATT 37 SBV 37 ADV 37 ADV 27 COO 37 VOB 5 WP 
+33
+国务院 总理 李鹏 为 这 次 会议 作出 批示 ， 要求 航空 工业 要 大力 推进 两 个 根本 转变 ， 切实 搞好 结构 调整 、 技术 开发 和 市场 营销 工作 。 
+33
+ni n nh p r q n v n wp v n n v d v m q a v wp a v n v wp n v c n v v wp 
+33
+S-Ni O S-Nh O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O 
+33
+2 ATT 3 ATT 8 SBV 8 ADV 6 ATT 7 ATT 4 POB 0 HED 8 VOB 8 WP 8 COO 13 ATT 11 DBL 16 ADV 16 ADV 11 VOB 18 ATT 20 ATT 20 ADV 16 VOB 16 WP 23 ADV 16 COO 25 FOB 23 VOB 28 WP 28 FOB 25 COO 31 LAD 31 ATT 25 COO 25 COO 8 WP 

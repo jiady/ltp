@@ -7,6 +7,6 @@
 14
 v ns n n wp n j b n nh v u v wp 
 14
-O S-Ns O O O B-Ni E-Ni O O S-Nh O O O O 
+O S-Ns O O O B-Ni E-Ni O O S-Nh O O S-Ni O 
 14
 10 ATT 3 ATT 4 ATT 10 ATT 9 WP 7 ATT 9 ATT 9 ATT 4 COO 11 SBV 0 HED 11 RAD 11 VOB 11 WP 

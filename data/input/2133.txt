@@ -7,6 +7,6 @@
 28
 ni n n wp n n wp n n n nh v v n wp p n v v n wp c p n k v v wp 
 28
-B-Ni E-Ni O O O O O B-Ni E-Ni O S-Nh O O O O O O O O O O O O O O O O O 
+B-Ni E-Ni S-Ni O O O O B-Ni E-Ni O S-Nh O O O O O O O O O O O O O O O O O 
 28
 2 ATT 3 ATT 11 ATT 6 WP 6 ATT 3 COO 10 WP 9 ATT 10 ATT 3 COO 12 SBV 0 HED 14 ATT 12 VOB 12 WP 18 ADV 16 POB 12 COO 20 ATT 18 VOB 12 WP 26 ADV 26 ADV 23 POB 24 RAD 12 COO 26 COO 12 WP 

@@ -7,6 +7,6 @@
 17
 r v ns n nh nt nt wp ns v ns n nd m q i wp 
 17
-O O S-Ns O S-Nh O O O B-Ni I-Ni I-Ni E-Ni O O O O O 
+S-Ni O S-Ns O S-Nh O O O B-Ni I-Ni I-Ni E-Ni O O O O O 
 17
 4 ATT 4 ATT 2 VOB 5 ATT 16 SBV 7 ATT 16 ADV 7 WP 10 SBV 12 ATT 10 VOB 13 ATT 16 ADV 15 ATT 16 ATT 0 HED 16 WP 

@@ -1,12 +1,12 @@
-诸如万达队的李明、申花队的申思和国安队的外籍球员冈玻斯，都是过去一年中的中场佼佼者，即使未必众望所归，但确有几手可以让各队众多中场球员学一阵子。
-申思
-国安队
-0
-43
-诸如 万达队 的 李明 、 申花队 的 申思 和 国安队 的 外籍 球员 冈玻斯 ， 都 是 过去 一 年 中 的 中场 佼佼者 ， 即使 未必 众望所归 ， 但 确 有 几 手 可以 让 各队 众多 中场 球员 学 一阵子 。 
-43
-v ni u nh wp ni u nh c ni u n n nh wp d v nt m q nd u nl n wp c d i wp c d v m q v v r m nl n v m wp 
-43
-O S-Ni O S-Nh O S-Ni O S-Nh O S-Ni O O O S-Nh O O O O O O O O O O O O O O O O O O O O O O O O O O O O O 
-43
-8 ATT 1 VOB 2 RAD 8 ATT 6 WP 4 COO 4 RAD 17 SBV 14 LAD 13 ATT 10 RAD 13 ATT 14 ATT 8 COO 8 WP 17 ADV 0 HED 20 ATT 20 ATT 21 ATT 24 ATT 21 RAD 24 ATT 17 VOB 17 WP 28 ADV 28 ADV 17 COO 28 WP 32 ADV 32 ADV 28 COO 34 ATT 32 VOB 36 ADV 32 COO 40 ATT 40 ATT 40 ATT 36 DBL 36 VOB 41 CMP 17 WP 
+第一循环中最令人兴奋的一场球要属江苏南钢队主场扳倒八一队，江苏队内有查理?曼德、詹姆斯大力扣篮，拼抢篮板，外有胡卫东、苑志南、李青山等人三分远投，个人突破，水平发挥淋漓尽致。
+苑志南
+江苏队
+1
+51
+第一 循环 中 最 令 人 兴奋 的 一 场 球 要 属 江苏 南钢队 主场 扳倒 八一队 ， 江苏队 内 有 查理?曼德 、 詹姆斯 大力 扣篮 ， 拼抢 篮板 ， 外 有 胡卫东 、 苑志南 、 李青山 等 人 三 分 远投 ， 个人 突破 ， 水平 发挥 淋漓尽致 。 
+51
+m v nd d v n v u m q n v v ns ni n v ni wp ni nd v nh wp nh d v wp v n wp nd v nh wp nh wp nh u n m q v wp n v wp n v i wp 
+51
+O O O O O O O O O O O O O B-Ni E-Ni O O S-Ni O S-Ni O O S-Nh O S-Nh O O O O O O O O S-Nh O S-Nh O S-Nh O O O O O O O O O O O O O 
+51
+2 ATT 3 ATT 5 ADV 5 ADV 11 ATT 5 DBL 5 VOB 5 RAD 10 ATT 11 ATT 13 SBV 13 ADV 0 HED 15 ATT 17 SBV 17 SBV 13 VOB 17 VOB 13 WP 21 ATT 22 ADV 13 COO 22 DBL 25 WP 23 COO 27 ADV 22 VOB 22 WP 22 COO 29 VOB 22 WP 33 ADV 22 COO 40 ATT 36 WP 34 COO 38 WP 34 COO 34 RAD 43 SBV 42 ATT 43 ATT 33 VOB 33 WP 46 SBV 33 COO 46 WP 49 SBV 46 COO 49 VOB 13 WP 

@@ -7,6 +7,6 @@
 20
 d wp nh m q n wp p n v v u ns ns i n n u n wp 
 20
-O O S-Nh O O O O O O O O O B-Ni I-Ni I-Ni I-Ni E-Ni O O O 
+O O S-Nh O O O O O S-Ni O O O B-Ni I-Ni I-Ni I-Ni E-Ni O O O 
 20
 10 ADV 1 WP 6 ATT 5 ATT 6 ATT 10 SBV 6 WP 10 ADV 8 POB 0 HED 10 CMP 10 RAD 14 ATT 15 ATT 17 ATT 17 ATT 19 ATT 17 RAD 10 VOB 10 WP 

@@ -7,6 +7,6 @@
 24
 r ns nt nt n n nh v wp nz n n n n nt nt p j v j n nt n wp 
 24
-O S-Ns O O O O S-Nh O O B-Ni I-Ni I-Ni I-Ni E-Ni O O O S-Ns O O O O O O 
+S-Ni S-Ns O O O O S-Nh O O B-Ni I-Ni I-Ni I-Ni E-Ni O O O S-Ns O O O O O O 
 24
 5 SBV 5 ADV 4 ATT 5 ADV 0 HED 7 ATT 8 SBV 5 COO 8 WP 14 ATT 13 ATT 13 ATT 14 ATT 19 SBV 16 ATT 19 ADV 19 ADV 17 POB 8 VOB 21 ATT 23 ATT 23 ATT 19 VOB 5 WP 

@@ -1,12 +1,12 @@
-中国科学院副院长陈宜瑜称它们是“当之无愧的世界级科技进展”。
-陈宜瑜
-中国科学院
+国务院副总理吴邦国、国务委员罗干等参加了接见。
+吴邦国
+国务院
 1
-16
-中国 科学院 副 院长 陈宜瑜 称 它们 是 “ 当之无愧 的 世界级 科技 进展 ” 。 
-16
-ns n b n nh v r v wp i u b n v wp wp 
-16
-B-Ni E-Ni O O S-Nh O O O O O O O O O O O 
-16
-2 ATT 4 ATT 4 ATT 5 ATT 6 SBV 0 HED 8 SBV 6 VOB 14 WP 14 ATT 10 RAD 13 ATT 14 SBV 8 VOB 14 WP 6 WP 
+12
+国务院 副 总理 吴邦国 、 国务委员 罗干 等 参加 了 接见 。 
+12
+ni b n nh wp n nh u v u v wp 
+12
+S-Ni O O S-Nh O O S-Nh O O O O O 
+12
+3 ATT 3 ATT 4 ATT 9 SBV 7 WP 7 ATT 4 COO 4 RAD 0 HED 9 RAD 9 VOB 9 WP 

@@ -1,12 +1,12 @@
-在今天国家民委与彭楚政先进事迹报告团成员召开的座谈会上，国家民委领导宣读了授予彭楚政这一荣誉称号的决定，向彭楚政颁发了荣誉证书。
-彭楚政
-国家民委
-0
-36
-在 今天 国家 民委 与 彭楚政 先进 事迹 报告团 成员 召开 的 座谈会 上 ， 国家 民委 领导 宣读 了 授予 彭楚政 这 一 荣誉 称号 的 决定 ， 向 彭楚政 颁发 了 荣誉 证书 。 
-36
-p nt n j p nh a n n n v u n nd wp n j n v u v nh r m n n u n wp p nh v u n n wp 
-36
-O O B-Ni E-Ni O S-Nh O O O O O O O O O B-Ni E-Ni O O O O S-Nh O O O O O O O O S-Nh O O O O O 
-36
-19 ADV 11 ADV 4 ATT 11 SBV 10 LAD 8 ATT 8 ATT 9 ATT 10 ATT 4 COO 13 ATT 11 RAD 14 ATT 1 POB 1 WP 17 ATT 18 ATT 19 SBV 0 HED 19 RAD 28 ATT 26 ATT 24 ATT 26 ATT 26 ATT 21 VOB 21 RAD 19 VOB 19 WP 32 ADV 30 POB 19 COO 32 RAD 35 ATT 32 VOB 19 WP 
+同时跻身这一行列的还有一家４口均能写会画的湖北东方化学工业公司职工李进才、一家３口均能拉会唱的市邮电局职工徐春丽等１０个家庭，他们分别荣获收藏之家、摄影之家、文艺之家、书画之家、体育之家等光荣称号。
+李进才
+湖北东方化学工业公司
+1
+68
+同时 跻身 这 一 行列 的 还有 一家 ４ 口 均 能 写 会 画 的 湖北 东方 化学工业 公司 职工 李进才 、 一 家 ３ 口 均 能 拉 会 唱 的 市 邮电局 职工 徐春丽 等 １０ 个 家庭 ， 他们 分别 荣获 收藏 之 家 、 摄影 之 家 、 文艺 之 家 、 书画 之 家 、 体育 之 家 等 光荣 称号 。 
+68
+c v r m n u v n m q d v v v v u ns nz i n n nh wp m q m q d v v v v u n n n nh u m q n wp r d v v u n wp v u n wp n u n wp n u n wp n u n u a n wp 
+68
+O O O O O O O O O O O O O O O O B-Ni I-Ni I-Ni E-Ni O S-Nh O O O O O O O O O O O O S-Ni O S-Nh O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O 
+68
+7 ADV 7 SBV 4 ATT 5 ATT 2 VOB 2 RAD 0 HED 10 ATT 10 ATT 13 SBV 12 ADV 13 ADV 22 ATT 15 ADV 13 VOB 15 RAD 20 ATT 20 ATT 20 ATT 21 ATT 22 ATT 30 SBV 27 WP 25 ATT 27 ATT 27 ATT 22 COO 29 ADV 30 ADV 7 VOB 32 ADV 37 ATT 32 RAD 35 ATT 36 ATT 37 ATT 41 ATT 37 RAD 40 ATT 41 ATT 30 VOB 7 WP 45 SBV 45 ADV 7 COO 48 ATT 46 RAD 67 ATT 52 WP 52 ATT 50 RAD 48 COO 56 WP 56 ATT 54 RAD 48 COO 60 WP 60 ATT 58 RAD 48 COO 64 WP 64 ATT 62 RAD 48 COO 48 RAD 67 ATT 45 VOB 7 WP 

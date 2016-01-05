@@ -1,12 +1,12 @@
-国家建材局局长张人为指出，短缺经济基本结束后产业结构和消费结构升级缓慢，以及企业在体制、机制和产品开发等方面不能适应社会主义市场经济的要求，是建材行业国有大中型企业陷入困境的宏观和微观原因。
-张人为
-国家建材局
-1
-52
-国家 建材局 局长 张人为 指出 ， 短缺 经济 基本 结束 后 产业 结构 和 消费 结构 升级 缓慢 ， 以及 企业 在 体制 、 机制 和 产品 开发 等 方面 不 能 适应 社会主义 市场经济 的 要求 ， 是 建材 行业 国有 大中型 企业 陷入 困境 的 宏观 和 微观 原因 。 
-52
-n n n nh v wp v n a v nd n n c v n v a wp c n p n wp n c n v u n d v v n n u n wp v n n v b n v n u n c n n wp 
-52
-B-Ni E-Ni O S-Nh O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O 
-52
-2 ATT 3 ATT 4 ATT 5 SBV 0 HED 5 WP 8 ATT 10 SBV 10 ADV 11 ATT 17 ADV 13 ATT 17 SBV 16 LAD 16 ATT 13 COO 5 VOB 17 CMP 17 WP 33 LAD 33 SBV 33 ADV 30 ATT 25 WP 23 COO 28 LAD 28 FOB 23 COO 23 RAD 22 POB 32 ADV 33 ADV 17 COO 35 ATT 37 ATT 35 RAD 33 VOB 17 WP 17 COO 41 ATT 44 ATT 44 ATT 44 ATT 45 SBV 51 ATT 45 VOB 45 RAD 51 ATT 50 LAD 48 COO 39 VOB 5 WP 
+解放战争时期，邓永清同志历任新四军六纵队四十八团宣传部股长、二十四军军部副科长，华东野战军第八兵团后勤部宣传科科长，上海空军接管部学习大队政委等职。
+邓永清
+二十四军军部
+0
+37
+解放战争 时期 ， 邓永清 同志 历任 新四军 六 纵队 四十八 团 宣传部 股长 、 二十四 军 军部 副 科长 ， 华东 野战军 第八 兵团 后勤部 宣传科 科长 ， 上海 空军 接管部 学习 大队 政委 等 职 。 
+37
+nz n wp nh n v n m n m n n n wp m n n b n wp ns n m n n n n wp ns n n v n n u n wp 
+37
+O O O S-Nh O O B-Ni I-Ni I-Ni I-Ni I-Ni E-Ni O O B-Ni I-Ni E-Ni O O O B-Ni I-Ni I-Ni I-Ni I-Ni E-Ni O O B-Ni I-Ni I-Ni I-Ni E-Ni S-Ni O O O 
+37
+2 ATT 6 ADV 2 WP 5 ATT 6 SBV 0 HED 9 ATT 9 ATT 11 ATT 11 ATT 12 ATT 13 ATT 6 VOB 19 WP 16 ATT 17 ATT 19 ATT 19 ATT 13 COO 6 WP 22 ATT 24 ATT 24 ATT 25 ATT 26 ATT 27 ATT 6 COO 27 WP 30 ATT 31 ATT 33 ATT 33 ATT 34 ATT 36 ATT 34 RAD 6 COO 6 WP 

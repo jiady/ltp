@@ -7,6 +7,6 @@
 24
 r n nh ns n nt d v j n u a d d p n c b n v u v v wp 
 24
-O O S-Nh B-Ni E-Ni O O O O O O O O O O O O O O O O O O O 
+S-Ni O S-Nh B-Ni E-Ni O O O O O O O O O O O O O O O O O O O 
 24
 2 ATT 3 ATT 5 ATT 5 ATT 8 SBV 8 ADV 8 ADV 12 ATT 10 ATT 8 VOB 8 RAD 23 SBV 23 ADV 23 ADV 23 ADV 15 POB 20 LAD 19 ATT 20 ATT 16 COO 16 RAD 15 POB 0 HED 23 WP 

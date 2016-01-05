@@ -7,6 +7,6 @@
 34
 ni n nh i u ns n u n n n n nd wp m q a a u wp n n wp d m q v u ns nt n u n wp 
 34
-S-Ni O S-Nh O O S-Ns O O O O O O O O O O O O O O O O O O O O O O S-Ns O O O O O 
+S-Ni O S-Nh O O S-Ns O O O O O S-Ni O O O O O O O O O O O O O O O O S-Ns O O O O O 
 34
 2 ATT 3 ATT 10 ATT 10 ATT 4 RAD 10 ATT 9 ATT 7 RAD 10 ATT 12 ATT 12 ATT 13 ATT 27 ADV 13 WP 16 ATT 22 ATT 22 ATT 17 COO 17 RAD 22 WP 22 ATT 27 SBV 22 WP 26 ATT 26 ATT 27 ADV 0 HED 27 RAD 31 ATT 31 ATT 33 ATT 31 RAD 27 VOB 27 WP 

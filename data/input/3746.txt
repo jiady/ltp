@@ -1,12 +1,12 @@
-山东省电力局局长、山东电力集团公司董事长兼总经理刘振亚称，山东鲁能泰山足球俱乐部股份有限公司将作为一项文化产业来经营，其股东由集团公司下属的鲁能集团等１２家多种产业企业组成。
-刘振亚
-山东鲁能泰山足球俱乐部股份有限公司
+全国政协副主席、中国佛教协会会长赵朴初，全国政协常委、中国伊斯兰教协会会长安士伟代表与会的宗教界人士发言，他们说，１９９８年宗教界将认真做好教务工作，积极参与社会主义文化建设，努力促进宗教与社会主义社会相适应，为国家的经济建设和发展大局服务。
+安士伟
+中国佛教协会
 0
-45
-山东省 电力局 局长 、 山东 电力 集团公司 董事长 兼 总经理 刘振亚 称 ， 山东 鲁能 泰山 足球 俱乐部 股份 有限公司 将 作为 一 项 文化 产业 来 经营 ， 其 股东 由 集团公司 下属 的 鲁能 集团 等 １２ 家 多种 产业 企业 组成 。 
-45
-ns n n wp ns n n n v n nh v wp ns nz ns n n n n d v m q n n v v wp r n p n v u nz n u m q m n n v wp 
-45
-B-Ni E-Ni O O B-Ni I-Ni E-Ni O O O S-Nh O O B-Ni I-Ni I-Ni I-Ni I-Ni I-Ni E-Ni O O O O O O O O O O O O O O O B-Ni E-Ni O O O O O O O O 
-45
-2 ATT 3 ATT 11 ATT 8 WP 7 ATT 7 ATT 8 ATT 3 COO 10 LAD 8 COO 12 SBV 0 HED 12 WP 18 ATT 18 ATT 18 ATT 18 ATT 20 ATT 20 ATT 28 SBV 28 ADV 28 ADV 24 ATT 26 ATT 26 ATT 22 POB 28 ADV 12 VOB 28 WP 31 ATT 44 FOB 44 ADV 34 SBV 37 ATT 34 RAD 37 ATT 43 ATT 37 RAD 40 ATT 43 ATT 43 ATT 43 ATT 32 POB 28 COO 12 WP 
+64
+全国 政协 副 主席 、 中国 佛教 协会 会长 赵朴初 ， 全国 政协 常委 、 中国 伊斯兰教 协会 会长 安士伟 代表 与会 的 宗教界 人士 发言 ， 他们 说 ， １９９８年 宗教界 将 认真 做 好 教务 工作 ， 积极 参与 社会主义 文化 建设 ， 努力 促进 宗教 与 社会主义 社会 相 适应 ， 为 国家 的 经济 建设 和 发展 大局 服务 。 
+64
+n j b n wp ns nz n n nh wp n j n wp ns nz n n nh v v u n n v wp r v wp nt n d a v a n v wp a v n n v wp a v n p n n d v wp p n u n v c v n v wp 
+64
+B-Ni E-Ni O O O B-Ni I-Ni E-Ni O S-Nh O B-Ni E-Ni S-Ni O B-Ni I-Ni E-Ni O S-Nh O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O S-Ni O O 
+64
+2 ATT 4 ATT 4 ATT 10 ATT 9 WP 8 ATT 8 ATT 9 ATT 4 COO 21 SBV 10 WP 13 ATT 14 ATT 20 ATT 19 WP 18 ATT 18 ATT 19 ATT 14 COO 21 SBV 0 HED 25 ATT 22 RAD 25 ATT 21 DBL 21 VOB 21 WP 29 SBV 21 COO 29 WP 32 ATT 35 SBV 35 ADV 35 ADV 29 VOB 35 CMP 38 ATT 35 VOB 35 WP 41 ADV 35 COO 43 ATT 44 FOB 41 VOB 35 WP 47 ADV 35 COO 53 SBV 53 ADV 51 ATT 49 POB 53 ADV 47 VOB 35 WP 35 COO 58 ATT 56 RAD 59 FOB 55 POB 61 LAD 59 COO 63 ATT 59 COO 21 WP 

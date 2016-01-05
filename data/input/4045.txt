@@ -1,12 +1,12 @@
-民政部对抗震救灾工作高度重视，部长多吉才让等对救灾工作做了明确的部署，救灾救济司领导及工作人员立即到位，与灾区保持密切联系，随时掌握灾情，及时向党中央、国务院反映。
-多吉才让
-民政部
-1
-46
-民政部 对 抗震救灾 工作 高度 重视 ， 部长 多吉才让 等 对 救灾 工作 做 了 明确 的 部署 ， 救灾 救济 司 领导 及 工作 人员 立即 到位 ， 与 灾区 保持 密切 联系 ， 随时 掌握 灾情 ， 及时 向 党中央 、 国务院 反映 。 
-46
-ni p i v d v wp n nh u p v v v u a u v wp v v n n c v n d v wp p n v a v wp d v n wp a p ni wp ni v wp 
-46
-S-Ni O O O O O O O S-Nh O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O S-Ni O S-Ni O O 
-46
-6 SBV 6 ADV 4 ATT 2 POB 6 ADV 0 HED 6 WP 9 ATT 14 SBV 9 RAD 14 ADV 13 ATT 11 POB 6 VOB 14 RAD 18 ATT 16 RAD 14 VOB 14 WP 22 ATT 22 ATT 23 ATT 28 SBV 26 LAD 26 ATT 23 COO 28 ADV 14 COO 28 WP 32 ADV 30 POB 28 COO 34 ADV 32 VOB 28 WP 37 ADV 28 COO 37 VOB 28 WP 45 ADV 45 ADV 41 POB 44 WP 42 COO 28 COO 6 WP 
+全国人大常委会副委员长吴阶平和有关方面负责人，以及邢贲思、丁聪、董辅、范用、冯兰瑞、冯其庸、龚育之、黄宗江、李世济、刘厚生、刘心武、汝信、邵燕祥、苏星、童大林、王选、吴祖光、吴祖强、曾彦修、周巍峙等近百名知名人士参加座谈会。
+刘心武
+全国人大常委会
+0
+59
+全国 人大 常委会 副 委员长 吴阶平 和 有关 方面 负责人 ， 以及 邢贲思 、 丁聪 、 董辅 、 范用 、 冯兰瑞 、 冯其庸 、 龚育之 、 黄宗江 、 李世济 、 刘厚生 、 刘心武 、 汝信 、 邵燕祥 、 苏星 、 童大林 、 王选 、 吴祖光 、 吴祖强 、 曾彦修 、 周巍峙 等 近 百 名 知名人士 参加 座谈会 。 
+59
+n j j b n nh c v n n wp c nh wp nh wp nh wp nh wp nh wp nh wp nh wp nh wp nh wp nh wp nh wp nh wp nh wp nh wp nh wp nh wp nh wp nh wp nh wp nh u a m q n v n wp 
+59
+B-Ni I-Ni E-Ni O O S-Nh O O O O O O S-Nh O S-Nh O S-Nh O S-Nh O S-Nh O S-Nh O S-Nh O S-Nh O S-Nh O S-Nh O S-Nh O S-Nh O S-Nh O S-Nh O S-Nh O S-Nh O S-Nh O S-Nh O S-Nh O S-Nh O O O O O O O O 
+59
+2 ATT 3 ATT 5 ATT 5 ATT 6 ATT 56 ATT 10 LAD 9 ATT 10 ATT 6 COO 6 WP 13 LAD 6 COO 13 WP 13 COO 15 WP 13 COO 17 WP 13 COO 21 WP 13 COO 23 WP 13 COO 25 WP 13 COO 27 WP 13 COO 29 WP 13 COO 31 WP 13 COO 33 WP 13 COO 35 WP 13 COO 37 WP 13 COO 39 WP 13 COO 41 WP 13 COO 43 WP 13 COO 45 WP 13 COO 47 WP 13 COO 49 WP 13 COO 51 WP 13 COO 6 RAD 54 ATT 55 ATT 56 ATT 57 SBV 0 HED 57 VOB 57 WP 

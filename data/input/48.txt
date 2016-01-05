@@ -7,6 +7,6 @@
 23
 j n nh wp n n nh d p nt p nt v v u v c v n v u v wp 
 23
-O O S-Nh O O O S-Nh O O O O O O O O O O O O O O O O 
+S-Ni O S-Nh O O O S-Nh O O O O O O O O O O O O O O O O 
 23
 2 ATT 3 ATT 20 SBV 6 WP 6 ATT 3 COO 3 COO 20 ADV 20 ADV 9 POB 20 ADV 14 ATT 14 ATT 16 ATT 14 RAD 11 POB 19 LAD 19 ATT 16 COO 0 HED 20 RAD 20 VOB 20 WP 

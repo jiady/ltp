@@ -1,12 +1,12 @@
-新华社济南１月１３日电中国科学院院士，山东大学校长，中国共产党党员、全国人大代表，著名数学家、教育家潘承洞同志，因病医治无效，于１９９７年１２月２７日在济南逝世，享年６４岁。
-潘承洞
-中国共产党
+新华社北京１月１３日电（中央人民广播电台记者刘振英、新华社记者王言彬）国务院总理李鹏今天下午在人民大会堂接见全国海关关长会议代表时强调说：在社会主义市场经济体制建设不断推进，对外开放进一步扩大的新形势下，海关的职能不能削弱，只能加强。
+李鹏
+国务院
 1
-45
-新华社 济南 １月 １３日 电 中国 科学院 院士 ， 山东 大学 校长 ， 中国 共产党 党员 、 全国 人大 代表 ， 著名 数学家 、 教育家 潘承洞 同志 ， 因 病 医治 无效 ， 于 １９９７年 １２月 ２７日 在 济南 逝世 ， 享年 ６４ 岁 。 
-45
-ni ns nt nt n ns n n wp ns n n wp ns n n wp n j n wp a n wp n nh n wp p n v v wp p nt nt nt p ns v wp n m q wp 
-45
-S-Ni S-Ns O O O B-Ni E-Ni O O B-Ni E-Ni O O B-Ni E-Ni O O B-Ni E-Ni O O O O O O S-Nh O O O O O O O O O O O O S-Ns O O O O O O 
-45
-5 SBV 5 ADV 4 ATT 5 ADV 0 HED 7 ATT 8 ATT 5 VOB 5 WP 11 ATT 12 ATT 31 SBV 12 WP 15 ATT 16 ATT 31 SBV 20 WP 19 ATT 20 ATT 16 COO 16 WP 23 ATT 26 ATT 25 WP 23 COO 27 ATT 16 COO 16 WP 31 ADV 29 POB 5 COO 31 CMP 31 WP 40 ADV 37 ATT 37 ATT 34 POB 40 ADV 38 POB 31 COO 40 WP 44 SBV 44 ATT 40 COO 5 WP 
+61
+新华社 北京 １月 １３日 电 [ 中央 人民 广播 电台 记者 刘振英 、 新华社 记者 王言彬 ] 国务院 总理 李鹏 今天 下午 在 人民 大会堂 接见 全国 海关 关长 会议 代表 时 强调 说 ： 在 社会主义 市场经济 体制 建设 不断 推进 ， 对外开放 进一步 扩大 的 新 形势 下 ， 海关 的 职能 不 能 削弱 ， 只能 加强 。 
+61
+ni ns nt nt n wp n n v n n nh wp ni n nh wp ni n nh nt nt p n n v n n n n n n v v wp p n n n v d v wp i d v u a n nd wp n u n d v v wp v v wp 
+61
+S-Ni S-Ns O O O O B-Ni I-Ni I-Ni E-Ni O S-Nh O S-Ni O S-Nh O S-Ni O S-Nh O O O B-Ns E-Ns O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O 
+61
+5 SBV 5 ADV 4 ATT 5 ADV 0 HED 12 WP 8 ATT 10 ATT 10 ATT 11 ATT 12 ATT 33 SBV 12 WP 15 ATT 16 ATT 12 COO 12 WP 19 ATT 20 ATT 33 SBV 22 ATT 26 ADV 26 ADV 25 ATT 23 POB 32 ATT 28 ATT 29 ATT 30 ATT 31 ATT 26 VOB 33 ADV 5 COO 33 COO 34 WP 42 ADV 38 ATT 39 ATT 40 FOB 42 SBV 42 ADV 34 VOB 42 WP 46 SBV 46 ADV 49 ATT 46 RAD 49 ATT 50 ATT 57 ADV 50 WP 54 ATT 52 RAD 57 SBV 56 ADV 57 ADV 42 COO 57 WP 60 ADV 57 COO 5 WP 

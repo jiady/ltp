@@ -1,12 +1,12 @@
-在塞尔维亚民主党和塞尔维亚激进党３９名议员缺席情况下，波黑塞族议会以４２票批准了由多迪克出任政府总理并同意他提出的２０名政府成员名单。
-多迪克
-塞尔维亚激进党
-0
-37
-在 塞尔维亚 民主党 和 塞尔维亚 激进党 ３９ 名 议员 缺席 情况 下 ， 波黑 塞族 议会 以 ４２ 票 批准 了 由 多迪克 出任 政府 总理 并 同意 他 提出 的 ２０ 名 政府 成员 名单 。 
-37
-p ns n c ns n m q n v n nd wp ns nz n p m q v u p nh v n n c v r v u m q n n n wp 
-37
-O B-Ni E-Ni O B-Ni E-Ni O O O O O O O B-Ni I-Ni E-Ni O O O O O O S-Nh O O O O O O O O O O O O O O 
-37
-20 ADV 3 ATT 9 ATT 6 LAD 6 ATT 3 COO 8 ATT 9 ATT 11 ATT 11 ATT 12 ATT 1 POB 1 WP 15 ATT 16 ATT 20 SBV 20 ADV 19 ATT 17 POB 0 HED 20 RAD 24 ADV 22 POB 20 VOB 26 ATT 24 VOB 28 ADV 24 COO 30 SBV 36 ATT 30 RAD 33 ATT 35 ATT 35 ATT 36 ATT 28 VOB 20 WP 
+关于建立加强海上军事安全磋商机制中美签署相关协定据新华社北京一月十九日电（记者杨国强）中央军委副主席、国务委员兼国防部长迟浩田与美国国防部长科恩今天在钓鱼台国宾馆签署了中美国防部《关于建立加强海上军事安全磋商机制协定》。
+迟浩田
+中央军委
+1
+56
+关于 建立 加强 海上 军事 安全 磋商 机制 中 美 签署 相关 协定 据 新华社 北京 一月 十九日 电 [ 记者 杨国强 ] 中央军委 副 主席 、 国务委员 兼 国防部长 迟浩田 与 美国 国防部长 科恩 今天 在 钓鱼台 国宾馆 签署 了 中 美 国防部 《 关于 建立 加强 海上 军事 安全 磋商 机制 协定 》 。 
+56
+p v v nl n a v n j j v v n p ni ns nt nt n wp n nh wp ni b n wp n v n nh p ns n nh nt p ns n v u j j n wp p v v nl n a v n n wp wp 
+56
+O O O O O O O O S-Ns S-Ns O O O O S-Ni S-Ns O O O O O S-Nh O S-Ni O O O O O O S-Nh O S-Ns O S-Nh O O B-Ns E-Ns O O S-Ns S-Ns S-Ni O O O O O O O O O O O O 
+56
+0 HED 1 POB 2 COO 8 ATT 8 ATT 7 ADV 8 ATT 9 ATT 11 SBV 9 COO 3 VOB 13 ATT 11 VOB 40 ADV 40 SBV 40 SBV 18 ATT 19 ADV 40 SBV 22 WP 22 ATT 40 SBV 22 WP 26 ATT 26 ATT 31 ATT 28 WP 26 COO 30 LAD 26 COO 40 SBV 35 LAD 34 ATT 35 ATT 31 COO 40 ADV 40 ADV 39 ATT 37 POB 11 COO 40 RAD 44 ATT 42 COO 54 ATT 54 WP 54 ATT 54 ATT 54 ATT 52 ADV 52 SBV 52 ADV 53 ATT 54 ATT 40 VOB 54 WP 1 WP 

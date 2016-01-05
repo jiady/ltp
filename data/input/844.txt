@@ -7,6 +7,6 @@
 20
 r v v v u ns n v n nh wp v r v v u r q n wp 
 20
-O O O O O S-Ns O O O S-Nh O O O O O O O O O O 
+O O O O O S-Ns S-Ni O O S-Nh O O O O O O O O O O 
 20
 2 SBV 0 HED 2 CMP 10 ATT 4 RAD 7 ATT 9 ATT 9 ATT 10 ATT 2 VOB 2 WP 2 COO 12 DBL 12 VOB 14 CMP 14 RAD 18 ATT 19 ATT 14 VOB 2 WP 

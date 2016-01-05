@@ -7,6 +7,6 @@
 51
 r n nh nd ns n b n nh r p n n v ns v wp r d v nt u v wp nl v u r m q p r v m u n wp nl v u z n wp d v u v n wp v wp 
 51
-O O S-Nh O B-Ni E-Ni O O S-Nh O O O O O S-Ns O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O 
+S-Ni O S-Nh O B-Ni E-Ni O O S-Nh O O O O O S-Ns O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O 
 51
 2 ATT 3 ATT 9 ATT 6 ATT 6 ATT 8 ATT 8 ATT 9 ATT 14 SBV 14 ADV 14 ADV 13 ATT 11 POB 0 HED 14 VOB 14 COO 14 WP 23 SBV 20 ADV 23 ADV 20 POB 20 RAD 14 COO 23 WP 26 ADV 23 COO 26 RAD 30 ATT 30 ATT 36 ATT 33 ADV 31 POB 36 ATT 33 CMP 33 RAD 26 VOB 26 WP 39 ADV 26 COO 39 RAD 42 ATT 39 VOB 39 WP 45 ADV 47 ADV 45 RAD 39 COO 47 VOB 50 WP 47 COO 14 WP 

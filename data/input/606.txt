@@ -7,6 +7,6 @@
 10
 nt wp j n nh v u nh n wp 
 10
-O O O O S-Nh O O S-Nh O O 
+O O S-Ni O S-Nh O O S-Nh O O 
 10
 6 ADV 1 WP 4 ATT 5 ATT 6 SBV 0 HED 6 RAD 9 ATT 6 VOB 6 WP 

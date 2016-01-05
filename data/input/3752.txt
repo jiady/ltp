@@ -1,12 +1,12 @@
-据以色列方面的消息报道，有迹象显示内塔尼亚胡已经同意了以色列国防部长莫迪凯提出的上述撤军方案。
-莫迪凯
-以色列国防部
-1
-23
-据 以色列 方面 的 消息 报道 ， 有 迹象 显示 内塔尼亚胡 已经 同意 了 以色列 国防部长 莫迪凯 提出 的 上述 撤军 方案 。 
-23
-p ns n u n v wp v n v nh d v u ns n nh v u b v n wp 
-23
-O S-Ns O O O O O O O O S-Nh O O O S-Ns O S-Nh O O O O O O 
-23
-10 ADV 3 ATT 5 ATT 3 RAD 6 SBV 1 POB 1 WP 10 SBV 8 VOB 0 HED 13 SBV 13 ADV 10 VOB 13 RAD 16 ATT 17 ATT 18 SBV 22 ATT 18 RAD 22 ATT 22 ATT 13 VOB 10 WP 
+王光英、铁木尔?达瓦买提，中宣部、新闻出版署和首都主要新闻单位的负责人，波兰、阿根廷、印度等国大使馆的新闻官员以及中外记者共２００多人出席了今天的联谊会。
+王光英
+新闻出版署
+0
+40
+王光英 、 铁木尔?达瓦买提 ， 中宣部 、 新闻 出版署 和 首都 主要 新闻 单位 的 负责人 ， 波兰 、 阿根廷 、 印度 等 国 大使馆 的 新闻 官员 以及 中外 记者 共 ２００ 多 人 出席 了 今天 的 联谊会 。 
+40
+nh wp nh wp j wp n n c n b n n u n wp ns wp ns wp ns u n n u n n c j n d m m n v u nt u n wp 
+40
+S-Nh O S-Nh O S-Ni O B-Ni E-Ni O O O O O O O O S-Ns O S-Ns O S-Ns O O O O O O O O O O O O O O O O O O O 
+40
+15 ATT 3 WP 1 COO 1 WP 1 COO 8 WP 8 ATT 5 COO 13 LAD 13 ATT 13 ATT 13 ATT 1 COO 1 RAD 35 SBV 15 WP 23 ATT 19 WP 17 COO 21 WP 17 COO 17 RAD 24 ATT 27 ATT 24 RAD 27 ATT 34 ATT 30 LAD 30 ATT 27 COO 34 ATT 34 ATT 32 RAD 35 SBV 0 HED 35 RAD 39 ATT 37 RAD 35 VOB 35 WP 

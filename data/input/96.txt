@@ -7,6 +7,6 @@
 16
 ns j b n wp n n n n nh a v u r n wp 
 16
-B-Ni E-Ni O O O B-Ni I-Ni E-Ni O S-Nh O O O O O O 
+B-Ni E-Ni O O O B-Ni I-Ni E-Ni O S-Nh O O O S-Ni O O 
 16
 2 ATT 4 ATT 4 ATT 10 ATT 9 WP 8 ATT 8 ATT 9 ATT 4 COO 12 SBV 12 ADV 0 HED 12 RAD 15 ATT 12 VOB 12 WP 
